@@ -1,218 +1,237 @@
-=== Plugin Name ===
+=== Simple LDAP Login ===
 Contributors: clifgriffin
-Donate link: http://cgd.io
-Tags: LDAP, authentication, login, active directory, adLDAP
-Requires at least: 3.4
-Tested up to: 6.6.2
-Stable tag: 1.6.1
+Tags: ldap, authentication, login, active directory
+Requires at least: 6.5
+Tested up to: 7.1
+Requires PHP: 8.1
+Stable tag: 2.0.1
 License: GPLv2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Integrating WordPress with LDAP shouldn't be difficult. Now it isn't. Simple LDAP Login provides all of the features, none of the hassles.
+Connect WordPress accounts to Active Directory or OpenLDAP, with group access rules and automatic account creation.
 
 == Description ==
-Having a single login for every service is a must in large organizations. This plugin allows you to integrate WordPress with LDAP quickly and easily. Like, really really easy.
 
-**Contributing**
-This is a community project now. Most development is done by users like you who find bugs and fix them, or find new ways to make the plugin more powerful for everyone.
+= LDAP login for WordPress =
 
-The easiest way to contribute to this plugin is to submit a GitHub pull request. Here's the repo:
-https://github.com/clifgriffin/simple-ldap-login
+[Simple LDAP Login](https://simpleldaplogin.com/) lets staff sign in to WordPress with their existing Active Directory or OpenLDAP account. Simple LDAP Login checks directory credentials, applies group access rules, and can create a WordPress account after a valid login.
 
-**Support**
+Use it for staff sites, company intranets, and other WordPress sites that share an LDAP directory. Free includes LDAP password login, encrypted connections, group restrictions, and local administrator recovery. No paid license or PaidCommunities account is required for these features.
 
-If you need support, file an issue here:
-https://github.com/clifgriffin/simple-ldap-login/issues
+> **Need backup servers or single sign-on?** [Simple LDAP Login Pro](https://checkout.paidcommunities.com/checkout/prd_9QyrKxQpvZGrcCW8?plan=plan_9R8xkMlq1nmCekmG) adds backup LDAP servers, server SSO, automatic LDAP field mapping, group role rules, and profile updates. [Enterprise](https://checkout.paidcommunities.com/checkout/prd_9R92jB1prxMfJR36?plan=plan_9R937DcDDy4wMH4x) adds scheduled account management, multisite membership rules, and audit history.
 
-**Special Requests**
+= Use the directory accounts you already have =
 
-If you need a customization or change specific to your install, I am available for hire. Shoot me an e-mail: clifgriffin[at]gmail.com
+Connect to Active Directory or OpenLDAP. Authenticate existing WordPress users, or create accounts after their first valid directory login. Set the default WordPress role for new accounts and map standard profile fields to your directory attributes.
 
-= Features =
+= Control access with LDAP groups =
 
-* Supports Active Directory and OpenLDAP (and other directory systems which comply to the LDAP standard, such as OpenDS)
-* Supports TLS
-* Uses up-to-date methods for WordPress authentication routines.
-* Authenticates existing WordPress usernames against LDAP.
-* Can be configured to automatically create WordPress users for valid LDAP logins.
-* You can restrict logins based on one or more LDAP groups.
-* Intuitive control panel.
+Limit login to members of one or more LDAP groups. Active Directory checks include nested and primary groups. Keep account creation off when only existing WordPress users should have access.
 
-= Architecture =
-Simple LDAP Login adds an authentication filter to WordPress that authentication requests must pass. In doing so, it makes several decisions.
+= Protect directory connections =
 
-* Can the provided credentials be authenticated against LDAP?
-* * If so, is the LDAP user a member of the required LDAP groups (if any)?
-* * * Does a matching WordPress user exist?
-* * * * If so, log the user in.
-* * * * If not, is user creation enabled?
-* * * * * Create the user and log them in.
+Use StartTLS or LDAPS with a trusted server certificate. A failed TLS connection stops the login attempt. Plain LDAP requires an explicit setting. LDAP passwords are not stored as WordPress passwords.
 
-This is high level overview. This should answer the philosophical questions about how the plugin works. If the plugin is unable to authenticate the user, it should pass it down the chain to WordPress. (Unless LDAP Exclusive is turned on, in which case it won't.)
+= Keep a local way to recover access =
 
+Choose local administrator accounts that can sign in with their WordPress passwords. Connection and login tests let you check the setup before you enable LDAP. These tests do not create users or login sessions.
 
-== Changelog ==
-**Version 1.6.0**
+= Free features =
 
-* New filter sll_remove_default_authentication_hook lets you override local password fallback.
-* Lots of new features from various pull requests from contributing users. Most of these focus on new settings for edge cases, and some general improvements.
-* If we did our jobs right, nothing will break. But if it does, rolling back to 1.5.5 is the best place to start.
+* Active Directory and OpenLDAP password login.
+* One LDAP server, with configurable port and connection timeout.
+* StartTLS and LDAPS with certificate checks.
+* Login restrictions based on LDAP groups.
+* Nested and primary Active Directory group checks.
+* Optional WordPress account creation and a default role.
+* Directory attribute mapping for standard profile fields.
+* The `sll_user_meta_data` filter for integration-supplied metadata.
+* Local administrator recovery and LDAP-only login settings.
+* Site settings and central network settings for WordPress multisite.
+* Separate connection and login tests.
+* Translations for 24 locales.
 
-**Version 1.5.5**
+= Pro and Enterprise =
 
-* Fix syntax error.
-* Don’t sanitize user info.
+**Pro: USD 99 per year for one site.** Add backup LDAP servers, single sign-on from a trusted web server, automatic LDAP field mapping, group-to-role rules, and profile updates at login.
 
-**Version 1.5.4**
+**Enterprise: USD 499 per year for one site.** Includes Pro plus scheduled account import, access and session removal, multisite membership rules, and audit history with retention and CSV export.
 
-* Local admins will always fall back to local WP password.
-* Fixes bug where new users do not have name or other information from LDAP directory
+Both plans use the same paid plugin ZIP. Pro replaces Free; you do not run both plugins together. Your license selects the available features. Purchase links open each plan's checkout on PaidCommunities.
 
-**Version 1.5.3**
+= Upgrading from version 1.x =
 
-* Fixing apparent security problem with blank passwords. (!)
-* Fixing typo in filter name (did not affect any functionality)
-* Local admin exception coming soon, as well as more bug fixes.
-* Possible fix for login error upon arriving at login page when LDAP exclusive enabled.
+Back up the database and test the upgrade on a site copy. Version 2.0 requires WordPress 6.5 and PHP 8.1 or later.
 
-**Version 1.5.2**
+**Backup LDAP servers, server SSO, and automatic LDAP-to-user-meta mapping require Pro or Enterprise in version 2.0.1.** If your 1.x site uses these features, install the Pro ZIP directly and activate a paid license. Free keeps the saved settings but does not run these paid features.
 
-* Fixed bug with groups setting.
-* Removed delete_option references in upgrade code to allow for easier rollbacks (sorry about that!)
-* Fixed a few bugs in the user creation code.
-* Fixed bug with storing default user role.
+The `sll_user_meta_data` filter works in Free without a license. Integrations can supply custom metadata through this filter. Automatic LDAP attribute mappings require Pro or Enterprise.
 
-**Version 1.5.1**
+Older settings are backed up before migration. Existing sites keep the legacy administrator recovery rule. If a saved search password cannot be read, enter it again.
 
-* Fixed a bug where the domain controllers are passed as a string.
+= Support and contributions =
 
-**Version 1.5**
+Read the [setup guide](https://simpleldaplogin.com/docs/quick-start/) and [plugin documentation](https://simpleldaplogin.com/docs/). Use the [WordPress.org support forum](https://wordpress.org/support/plugin/simple-ldap-login/) for help with Free. Report bugs or contribute code in the [GitHub repository](https://github.com/clifgriffin/simple-ldap-login). Do not include directory passwords, license keys, or other secrets in a public support request.
 
-* Complete rewritten from the ground up.
-* It's Object Oriented, DRY and Singleton.
-* The options have been overhauled to make configuration much easier. Focuses on individual features rather than "modes" that encapsulate several behaviors.
-* Admin pages now use WordPress admin styles and behaviors.
-* Tested with Active Directory. I recommend OpenLDAP users test carefully before implementing in their production environments.
-* Added global on off switch so you can easily disable LDAP authentication without deactivating.
+= External services =
 
-**Version 1.4.0.5.1**
+LDAP requests go only to the directory servers that an administrator configures. Free LDAP login does not require an external license service.
 
-* I broke it. Sorry guys! :(
-* Downgraded adLDAP as some referenced functions no longer exist.
+The optional Go Pro tab links to [PaidCommunities](https://paidcommunities.com/) checkout. It does not load commerce scripts or send license requests. When you open a purchase link, PaidCommunities receives the product and plan IDs, your IP address, and browser details. It also receives the purchase and payment details that you enter during checkout.
 
-**Version 1.4.0.5**
+The paid plugin uses PaidCommunities for license activation and updates. Activation sends the license key, site domain, plugin version, and product ID. Later checks use a site activation secret. Requests also include the server IP address and standard WordPress HTTP headers. LDAP settings, bind passwords, login passwords, and directory user records are not sent to PaidCommunities. Login uses saved license status and does not contact the service.
 
-* Updated adLDAP to version 4.x
-* Fixed error in OpenLDAP group membership check
-* As always TEST this first. Don't assume it works...I don't have a testing environment to ensure it will work correctly.
+Free keeps WordPress.org updates. A purchase or license activation does not install the paid plugin automatically.
 
-**Version 1.4.0.4**
-
-* Fixes nickname bug accidentally put back in in last version. (My bad!)
-
-**Version 1.4.0.3**
-* Reverts bug introduced in 1.4.0.2
-* If you installed 1.4.0.2 and use OpenLDAP, please update as soon as possible and verify users cannot login with incorrect passwords (and vice versa).
-
-**Version 1.4.0.2 - Patches submitted by Jonas Genannt and Ilya Kozlov**
-* Updates adLDAP to 3.3.2
-* Fixes issue with users in recursive OUs not being found.
-* Fixes issues with different Base DN formats.
-* NOTE: Please be catious in updating. As I don't have an OpenLDAP install, I am unable to independently confirm these fix the problems. If you have issues, revert to 1.4.0.1 and e-mail me: clifgriffin[at]gmail.com.  Likewise, If you can confirm these changes are effective, also let me know. :)
-
-**Version 1.4.0.1**
-
-* Fix for e-mail exists issue with WP 3.0+ for LDAP installations that don't populate the e-mail address attribute.
-* Shows actual error message from WordPress upon failure.
-
-**Version 1.4**
-
-* First update in about a year. Thanks for your patience.
-* Completely rewritten to support changes in WordPress 2.8+.  Now fully supports WordPress 3.0.
-* Much more manageable and efficient code structure. Less code repetition.
-* Includes TLS support.
-* Allows OpenLDAP users to specify an alternate LDAP attribute to use for logins for those not using UID.
-
-**Version 1.3.0.3**
-
-* Test form now implements wp_authenticate and uses the same routines as the actual login. This also means account creation and group membership are tested.
-* Implemented stripslashes() to correct issue with some special characters such as a single quote and backslash.
-* WordPress account "admin" is now allowed to login using local password even when security mode is set to high. For safety.
-* Made some minor wording changes to the admin panel.
-
-**Version 1.3.0.2.1**
-
-* Fixed case sensitivity issue that could result in multiple accounts. There may be lingering case insensitivity issues due to the get_userdatabylogin function being case-sensitive. We'll figure this out in due time.
-* Sorry for posting two updates on the same day!
-
-**Version 1.3.0.2**
-
-* Fixes several tickets including role assignment, case sensitivity, and potential compatibility issues with other themes/plugins.
-* Added security mode setting to allow security to be tightened.
-* Changed auto created accounts to use a random password rather than the LDAP password given.
-* Fixed error with the way announcements are displayed in the admin panel.
-* More code clean up.
-
-**Version 1.3.0.1**
-
-* Never officially released.
-* Contained code cleanup and some attempted fixes.
-
-**Version 1.3 Beta**
-
-* Support for both Active Directory and OpenLDAP.
-* The ability to create WordPress users automatically upon login based on LDAP group membership OR by LDAP authentication alone.
-* The ability to test domain settings straight from admin panel.
-* Announcements pane that allows me to update you with fixes, cautions, new beta versions, or other important information.
-
-**Version 1.2.0.1**
-
-* Changed required user level for admin page to 10, Administrators only.
-
-**Version 1.2**
-
-* Implemented multiple domain controllers.
-* Changed field sizes on admin page to be more user friendly.
-
-**Version 1.1**
-
-* Moved settings to administration pages under settings.
-* Upgraded to latest version of adLDAP 2.1.
-* Got rid of credentials. (They are not neccessary for the authenticate function in adLDAP!)
-* Plugin is now upgrade proof. Settings are stored using WordPress's setting functions.
-
-**Version 1.0**
-
-* Original release.
+* [Simple LDAP Login privacy policy](https://simpleldaplogin.com/privacy/)
+* [Simple LDAP Login terms and conditions](https://simpleldaplogin.com/terms/)
+* [PaidCommunities service documentation](https://paidcommunities.com/documentation/sdks/wordpress-sdk/)
+* [PaidCommunities checkout documentation](https://paidcommunities.com/documentation/checkout/)
 
 == Installation ==
 
-1. Use the WordPress plugin directory to install the plugin or upload the directory `simple-ldap-login` to the `/wp-content/plugins/` directory.
-1. Activate the plugin through the 'Plugins' menu in WordPress
-1. Update the settings to those that best match your environment by going to Settings -> Simple LDAP Login
-1. If you don't get the settings right the first time, don't fret! Just use your WordPress credentials. They should always work
-1. Once you have the settings correct, you can toggle LDAP Exclusive mode (if you like).
-1. To make your life easier, consider using two different browsers (e.g., Chrome and Firefox) to do testing.  Change settings in one. Test in the other. This will prevent any chance of being locked out.
+1. Install PHP 8.1 or later with the LDAP, OpenSSL, and iconv extensions.
+2. Upload the release ZIP through Plugins > Add New Plugin, or use the WordPress plugin directory.
+3. Activate Simple LDAP Login.
+4. Open Settings > Simple LDAP Login. For network activation, use Network Admin > Settings.
+5. Enter the directory connection details. Use StartTLS or LDAPS and a trusted server certificate.
+6. Save the settings and run the connection and login tests.
+7. Choose local recovery access on the Access tab. Keep your administrator session open, enable LDAP login, and test it in another browser.
+
+A release ZIP includes its dependencies. Do not install an unbuilt source archive.
 
 == Frequently Asked Questions ==
 
-= Other than WordPress, what does my system require? =
+= Do I need Pro to use LDAP login? =
 
-Your install of PHP must be configured/compiled with LDAP support.
+No. Free includes LDAP password login, group restrictions, account creation, TLS, and local recovery. Pro and Enterprise add the features listed above.
 
-= How do I know what the correct settings are? =
+= Does Pro replace Free? =
 
-I have tried to make the settings as self-explanatory as possible. If you are struggling figuring them out, you may need to speak with your LDAP administrator. I realize this is an obnoxious response, but there is no good, fool proof way to help you discover these settings. A good place to start, if you're feeling daring, might be to use ADSIEdit for Windows and Active Directory, or GQ for Linux and OpenLDAP.
+Yes. Upload the Pro ZIP and choose to replace the installed plugin. Do not delete the old plugin first. Both versions use the same plugin folder, and your saved settings stay in place. Then activate your Pro or Enterprise license.
 
-= It's still not working, what other things can I try? =
+= Which PHP extensions are required? =
 
-If you are confident your settings are correct and it still does not work, it may be time to check for port or firewall issues. If your LDAP server is running on a non-standard port or an obsolete version of the LDAP protocol you are going to have issues. Port 389 is the port this plugin, and nearly every other LDAP enabled software expects. They are also expecting protocol version 3. If you are using an old version of LDAP or running a non-standard port you may need to modify the code that the plugin runs or update your LDAP installation.
+Use PHP 8.1 or later with LDAP, OpenSSL, and iconv enabled. Your WordPress server must be able to reach the LDAP server and trust its TLS certificate.
 
-Unfortunately I can't be relied upon to assist with these types of requests. I chose not to support these scenarios because they are infrequent and because they confuse everyone else.
+= Where are the advanced settings? =
 
-= It's still not working! How can I get help? =
-The easiest way to get help is to post a comment on my blog: http://objectiv.co/simple-ldap-login/. I'll do my best to get you up and running!
+The Advanced tab contains the timeout, LDAP login and group attributes, group search base, profile attributes, plain LDAP permission, and uninstall data setting. Full packages also show metadata suffixes there. Common connection and access settings stay on their main tabs. Saved values are kept when you save another tab.
+
+= Will my existing settings work? =
+
+Your saved settings stay in place. The plugin backs up older settings before migration. If your 1.x site uses backup LDAP servers, SSO, or automatic LDAP-to-user-meta mapping, install the Pro ZIP directly and activate a Pro or Enterprise license. Free supports LDAP password login but does not run these paid features.
+
+Existing unencrypted connections continue to work with a warning. A failed TLS connection stops the login attempt. If the plugin cannot read a saved search password, enter it again.
+
+= Are old features moving to Pro? =
+
+Backup LDAP servers, single sign-on, and automatic LDAP-to-user-meta mapping require the Pro ZIP with an active Pro or Enterprise license, including on sites that upgrade from 1.x. The metadata filter, standard profile attributes, group restrictions, recovery access, and central network settings remain free.
+
+= What happens if LDAP is unavailable? =
+
+Local recovery access on the Access tab has three choices:
+
+* Selected administrators: the chosen accounts use WordPress authentication directly. LDAP and server SSO cannot sign in as these accounts or update their directory metadata.
+* All administrators (legacy): allow administrator WordPress passwords. On multisite, this applies to super administrators only.
+* Off: remove the administrator exception. Every account follows the normal LDAP login policy.
+
+New installations default to Selected administrators. Select at least one eligible local account, or explicitly choose Off, before enabling LDAP or server SSO. Site settings accept administrators of that site. Network settings accept only super administrators. Existing installations keep the legacy rule until an administrator changes it. Local recovery access is included in Free.
+
+When LDAP-only mode is off, WordPress can check local passwords for other accounts. A denied group still blocks those accounts. LDAP-only mode also blocks their local application password fallback.
+
+= How can I recover access? =
+
+Set `define( 'SLL_DISABLE_LDAP', true );` in `wp-config.php` before WordPress loads, then use a local administrator password. Correct the settings and remove the constant. You can also rename the plugin folder to disable it.
+
+= Does SSO trust a browser header? =
+
+No. Pro uses REMOTE_USER set by a server authentication module. Do not copy client request headers into that variable. Block access paths that bypass server authentication. SSO also requires a valid read-only search account. DOMAIN\name logins must match the Windows domain setting. The Free package does not include server SSO.
+
+= What happens when I delete the plugin? =
+
+User accounts are always kept. Settings are kept unless you enable Delete settings when removing the plugin on the Advanced tab.
 
 == Screenshots ==
 
-1. Easy to use admin panel.
-2. Advanced options for power users.
+1. Connect to OpenLDAP and choose the LDAP connection security.
+2. Set group access rules, account creation, and local recovery accounts.
+3. Set directory attributes, timeouts, and data retention.
+4. Test the LDAP connection and a user login.
+
+== Developer Hooks ==
+
+Use WordPress `add_filter()` and `add_action()` in an integration plugin. Register callbacks before login. Set the accepted argument count when a callback needs more than one argument. Filters must return the value described below.
+
+= Login and account filters =
+
+* `sll_get_setting( $value, $key )`: Return a setting value. The old global settings object also uses this filter.
+* `sll_force_ldap( $allow_recovery )`: Return `false` to require LDAP for administrators in legacy recovery mode. The inverted name is retained for compatibility. Selected recovery accounts and Off mode do not use this filter.
+* `sll_remove_default_authentication_hook( $exclusive )`: Return `true` to block local password fallback, or `false` to allow normal fallback. The filter no longer removes WordPress authentication handlers. Group denial still blocks fallback for users without a recovery exception.
+* `sll_ldap_auth( $bound )`: Receives a boolean bind result for password login and server SSO. Return `false` to reject it. A callback cannot make a failed bind or invalid directory identity valid.
+* `sll_user_has_groups( $allowed )`: Return a boolean group access result. This filter also runs when no required groups are configured.
+* `sll_user_data( $data )`: Return the array passed to `wp_insert_user()`. It runs only for new accounts. Fields include `user_login`, `user_nicename`, `user_pass`, `user_email`, `display_name`, `first_name`, `last_name`, `user_url`, and `role`. The local password is random, not the LDAP password.
+* `sll_user_meta_data( $values )`: Return an array of metadata names and scalar values, or `false` to skip writes. This filter works in every edition without a license. Free supplies an empty array. Licensed Pro supplies values from its automatic LDAP mappings. Integrations can add values in either edition.
+* `sll_account_verified( $user, $entry )`: Return the `WP_User` or a `WP_Error` to reject the directory account before account update actions. A new account can already have been created at this point.
+
+Metadata names receive the saved LDAP and WordPress suffixes. For example, `department` writes `department_ldap` and `department_wp` with the default settings. Local edits remain until the callback's source value changes. Protected account keys and non-scalar values are rejected. Selected local recovery accounts do not receive these directory updates.
+
+Example: supply a custom value without the Pro mapping feature:
+
+    add_filter( 'sll_user_meta_data', function ( $values ) {
+        $values['directory_source'] = 'staff';
+        return $values;
+    } );
+
+= Directory and settings filters =
+
+* `sll_ldap_hosts( $hosts, $settings )`: Return server addresses. Free supplies the primary server. The licensed paid module supplies backup servers.
+* `sll_ldap_attributes( $attributes )`: Return LDAP attribute names to request. Invalid attribute names are removed.
+* `sll_ldap_entry( $data, $connection, $entry, $username )`: Return the verified directory attribute array, or `WP_Error` to reject it. The connection and entry are the bundled LdapRecord objects. The array includes `dn`.
+* `sll_mapped_user_meta_data( $values, $entry )`: Supplies initial metadata values before `sll_user_meta_data`. Pro uses this hook for licensed LDAP mappings. Integrations that only supply custom values should use `sll_user_meta_data`.
+* `sll_settings_defaults( $defaults )`: Return the default settings array.
+* `sll_validate_setting( $result, $key, $value, $settings )`: Return `null` to use built-in validation, a validated value to store it, or `WP_Error` to reject the save.
+* `sll_settings_tabs( $tabs )`: Return an array of settings tab keys and labels.
+
+= Actions =
+
+* `sll_loaded( $settings, $auth )`: Shared settings and authentication services are ready.
+* `sll_account_loaded( $user, $entry )`: The directory account resolved to a WordPress user and passed `sll_account_verified`. Account modules use this action to update data. It can also run during scheduled imports.
+* `sll_auth_success( $user )`: An LDAP account passed the WordPress user check. It runs for new and existing accounts. Later authentication filters can still reject login; use WordPress `wp_login` for a completed login.
+* `sll_auth_failure()`: A password login received an LDAP error. It does not report every WordPress login failure.
+* `sll_settings_saved( $settings, $before, $after )`: A settings save succeeded. The arrays contain the previous and new settings.
+* `sll_settings_notices()`: Add settings-page notices.
+* `sll_access_settings( $admin )`, `sll_profile_settings( $admin )`, and `sll_advanced_settings( $admin )`: Add controls to the corresponding settings section.
+* `sll_settings_page_{tab}( $admin )`: Render a custom page for a registered tab without the standard settings form.
+* `sll_settings_tab_{tab}( $admin )`: Add controls for a registered tab inside the standard settings form.
+
+Existing filter names and argument order are retained. Callbacks that use the removed `adLDAP` object or that permit failed LDAP binds must change. Do not send passwords or directory records to external services from a callback.
+
+== Changelog ==
+
+= 2.0.1 =
+
+* Restore the public metadata filter in Free without requiring a paid license.
+* Keep automatic LDAP metadata mappings in the paid plans.
+* Restore the user_nicename field for account creation filters.
+* Run the LDAP authentication filter for server SSO and failed binds.
+* Document filter arguments, actions, and compatibility limits.
+
+= 2.0.0 =
+
+* Update the plugin for WordPress 6.5 and PHP 8.1 or later.
+* Redesign the settings screens for desktop and mobile.
+* Add separate connection and login tests to check settings before enabling LDAP.
+* Add selected local administrator recovery accounts and an option to turn recovery access off.
+* Back up existing settings before upgrades and preserve site settings, network settings, and recovery access.
+* Improve TLS validation and protect user account data during login.
+* Keep other WordPress authentication checks active during LDAP login.
+* Add translations for 23 additional locales.
+
+== Upgrade Notice ==
+
+= 2.0.1 =
+Restores integration filters and documents their behavior. The metadata filter works in Free. Automatic LDAP mappings remain paid. Failed binds remain blocked.
+
+= 2.0.0 =
+Requires PHP 8.1. Back up your site and test the upgrade on a copy. Existing recovery rules stay in place. For 1.x backup servers, SSO, or custom fields, install the Pro ZIP and activate a paid license. TLS failures stop login.

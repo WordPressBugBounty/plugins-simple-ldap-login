@@ -1,0 +1,24 @@
+<?php
+
+namespace SimpleLdapLoginVendor\LdapRecord;
+
+use function SimpleLdapLoginVendor\collect;
+use function SimpleLdapLoginVendor\data_fill;
+use function SimpleLdapLoginVendor\data_get;
+use function SimpleLdapLoginVendor\data_set;
+use function SimpleLdapLoginVendor\data_forget;
+use function SimpleLdapLoginVendor\head;
+use function SimpleLdapLoginVendor\last;
+use function SimpleLdapLoginVendor\value;
+
+use SimpleLdapLoginVendor\LdapRecord\Query\EscapedValue;
+trait EscapesValues
+{
+    /**
+     * Prepare a value to be escaped.
+     */
+    public function escape(mixed $value = null, string $ignore = '', int $flags = 0): EscapedValue
+    {
+        return new EscapedValue($value, $ignore, $flags);
+    }
+}

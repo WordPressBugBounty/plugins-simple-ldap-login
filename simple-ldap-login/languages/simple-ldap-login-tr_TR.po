@@ -1,0 +1,1563 @@
+# Copyright (C) 2026 Clif Griffin Development Inc.
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Simple LDAP Login 2.0.1\n"
+"Report-Msgid-Bugs-To: "
+"https://wordpress.org/support/plugin/simple-ldap-login\n"
+"Last-Translator: gpt-po v1.2.3\n"
+"Language-Team: tr_TR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-10-30T15:26:17+00:00\n"
+"PO-Revision-Date: 2026-10-30 00:00+0000\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: simple-ldap-login\n"
+"Language: tr_TR\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: Simple-LDAP-Login.php src/Admin.php:64 src/Admin.php:65 src/Admin.php:149
+#. Plugin Name of the plugin
+msgid "Simple LDAP Login"
+msgstr "Simple LDAP Login"
+
+#: Simple-LDAP-Login.php
+#. Plugin URI of the plugin
+msgid "https://github.com/clifgriffin/simple-ldap-login"
+msgstr "https://github.com/clifgriffin/simple-ldap-login"
+
+#: Simple-LDAP-Login.php
+#. Description of the plugin
+msgid "Connect WordPress accounts to Active Directory or OpenLDAP."
+msgstr "WordPress hesaplarını Active Directory veya OpenLDAP ile bağlayın."
+
+#: Simple-LDAP-Login.php
+#. Author of the plugin
+msgid "Clif Griffin Development Inc."
+msgstr "Clif Griffin Development Inc."
+
+#: Simple-LDAP-Login.php
+#. Author URI of the plugin
+msgid "https://clifgriffin.com"
+msgstr "https://clifgriffin.com"
+
+#: pro/src/Accounts.php:205
+msgid "Your directory account is suspended. Contact your site administrator."
+msgstr "Dizin hesabınız askıya alındı. Site yöneticinizle iletişime geçin."
+
+#: pro/src/Accounts.php:249
+msgid "The directory identity has changed. Contact your site administrator."
+msgstr "Dizin kimliği değişti. Site yöneticinizle iletişime geçin."
+
+#: pro/src/Admin.php:49
+msgid "User data"
+msgstr "Kullanıcı verileri"
+
+#: pro/src/Admin.php:50
+#: pro/src/Admin.php:84
+msgid "Single sign-on"
+msgstr "Tek oturum açma"
+
+#: pro/src/Admin.php:59
+msgid "Accounts"
+msgstr "Hesaplar"
+
+#: pro/src/Admin.php:60
+msgid "Audit"
+msgstr "Denetim"
+
+#: pro/src/Admin.php:70
+msgid "Profile updates"
+msgstr "Profil güncellemeleri"
+
+#: pro/src/Admin.php:70
+msgid ""
+"Copy standard LDAP profile fields to existing WordPress accounts at login. "
+"Recovery accounts and super administrators are excluded."
+msgstr ""
+"Oturum açılırken standart LDAP profil alanlarını mevcut WordPress "
+"hesaplarına kopyalayın. Kurtarma hesapları ve süper yöneticiler hariç "
+"tutulur."
+
+#: pro/src/Admin.php:71
+msgid "Update profiles at login"
+msgstr "Oturum açılırken profilleri güncelle"
+
+#: pro/src/Admin.php:71
+msgid ""
+"Replace names, email, and website with directory values. Empty directory "
+"values clear the field. A missing or invalid email stops the update."
+msgstr ""
+"Adları, e-postayı ve web sitesini dizin değerleriyle değiştirin. Boş dizin "
+"değerleri alanı temizler. Eksik veya geçersiz e-posta güncellemeyi durdurur."
+
+#: pro/src/Admin.php:60
+msgid "Custom user fields"
+msgstr "Özel kullanıcı alanları"
+
+#: pro/src/Admin.php:60
+msgid ""
+"Copy LDAP fields, such as phone number or department, to WordPress at "
+"login. Your theme or other plugins can use these values."
+msgstr ""
+"LDAP alanlarını, telefon numarası veya departman gibi, girişte WordPress'e "
+"kopyalayın. Temanız veya diğer eklentiler bu değerleri kullanabilir."
+
+#: pro/src/Admin.php:61
+#: src/Settings.php:615
+msgid "Field mappings"
+msgstr "Alan eşlemeleri"
+
+#: pro/src/Admin.php:81
+msgid "LDAP attribute"
+msgstr "LDAP özniteliği"
+
+#: pro/src/Admin.php:85
+msgid "WordPress meta key"
+msgstr "WordPress meta anahtarı"
+
+#: pro/src/Admin.php:89
+msgid "Type"
+msgstr "Tür"
+
+#: pro/src/Admin.php:91
+msgid "Text"
+msgstr "Metin"
+
+#: pro/src/Admin.php:92
+msgid "Number"
+msgstr "Sayı"
+
+#: pro/src/Admin.php:85
+msgid "Group roles"
+msgstr "Grup rolleri"
+
+#: pro/src/Admin.php:85
+msgid ""
+"Set the WordPress role from LDAP groups at each login. The first matching "
+"rule applies. If no rule matches, use the default role. Recovery accounts "
+"and super administrators are excluded."
+msgstr ""
+"Her oturum açılışında WordPress rolünü LDAP gruplarına göre ayarlayın. İlk "
+"eşleşen kural uygulanır. Hiçbir kural eşleşmezse varsayılan rol kullanılır. "
+"Kurtarma hesapları ve süper yöneticiler hariç tutulur."
+
+#: pro/src/Admin.php:86
+msgid "Group-to-role rules"
+msgstr "Gruptan role kuralları"
+
+#: pro/src/Admin.php:112
+#: pro/src/Admin.php:155
+msgid "LDAP group"
+msgstr "LDAP grubu"
+
+#: pro/src/Admin.php:116
+#: pro/src/Admin.php:164
+msgid "WordPress role"
+msgstr "WordPress rolü"
+
+#: pro/src/Admin.php:108
+msgid ""
+"Enterprise includes scheduled account import, scheduled access removal, and "
+"multisite membership rules. Your saved settings are kept."
+msgstr ""
+"Enterprise, zamanlanmış hesap içe aktarma, zamanlanmış erişim kaldırma ve "
+"çoklu site üyelik kurallarını içerir. Kayıtlı ayarlarınız korunur."
+
+#: pro/src/Admin.php:108
+#: pro/src/Audit.php:224
+msgid "View Enterprise upgrade"
+msgstr "Enterprise yükseltmesini görüntüle"
+
+#: pro/src/Admin.php:113
+msgid "Enterprise account settings"
+msgstr "Enterprise hesap ayarları"
+
+#: pro/src/Admin.php:97
+msgid "Multisite membership"
+msgstr "Çoklu site üyeliği"
+
+#: pro/src/Admin.php:97
+msgid ""
+"Assign site membership and roles from directory groups. The first matching "
+"rule for each site applies. These rules replace the group role rules for "
+"network activation."
+msgstr ""
+"Dizin gruplarına göre site üyeliği ve roller atayın. Her site için ilk "
+"eşleşen kural uygulanır. Ağ genelinde etkinleştirildiğinde bu kurallar grup "
+"rolü kurallarının yerine geçer."
+
+#: pro/src/Admin.php:98
+msgid "Group-to-site rules"
+msgstr "Gruptan siteye kurallar"
+
+#: pro/src/Audit.php:231
+msgid "Site ID"
+msgstr "Site kimliği"
+
+#: pro/src/Admin.php:101
+msgid "Scheduled account import"
+msgstr "Zamanlanmış hesap içe aktarma"
+
+#: pro/src/Admin.php:101
+msgid ""
+"Import directory accounts once per hour through WordPress scheduled tasks. "
+"Set a search account on Connection. Site traffic or a system task must run "
+"WordPress cron."
+msgstr ""
+"WordPress zamanlanmış görevleriyle dizin hesaplarını saatte bir içe "
+"aktarın. Bağlantı bölümünde bir arama hesabı ayarlayın. Site trafiği veya "
+"bir sistem görevi WordPress cron işlemini çalıştırmalıdır."
+
+#: pro/src/Admin.php:102
+msgid "Enable scheduled import"
+msgstr "Zamanlanmış içe aktarmayı etkinleştir"
+
+#: pro/src/Admin.php:102
+msgid ""
+"Create accounts without a first login. Existing local accounts are "
+"excluded. No user session is created."
+msgstr ""
+"İlk oturum açma olmadan hesap oluşturun. Mevcut yerel hesaplar hariç "
+"tutulur. Kullanıcı oturumu oluşturulmaz."
+
+#: pro/src/Admin.php:103
+msgid "Import Base DN"
+msgstr "İçe aktarma temel DN"
+
+#: pro/src/Admin.php:103
+msgid "Leave blank to use the connection Base DN."
+msgstr "Bağlantının temel DN değerini kullanmak için boş bırakın."
+
+#: pro/src/Admin.php:104
+msgid "Import groups"
+msgstr "İçe aktarma grupları"
+
+#: pro/src/Admin.php:104
+msgid ""
+"One group per line. Import users in at least one group. Leave blank to "
+"import all users below the Import Base DN. Login group restrictions also "
+"apply."
+msgstr ""
+"Her satıra bir grup yazın. Bu gruplardan en az birindeki kullanıcıları içe "
+"aktarın. İçe aktarma temel DN altında bulunan tüm kullanıcıları içe "
+"aktarmak için boş bırakın. Oturum açma grubu kısıtlamaları da uygulanır."
+
+#: pro/src/Admin.php:106
+msgid "Scheduled access removal"
+msgstr "Zamanlanmış erişim kaldırma"
+
+#: pro/src/Admin.php:106
+msgid ""
+"Check managed directory accounts once per hour. A confirmed missing "
+"account, disabled AD account, changed directory identity, or failed login "
+"group rule suspends access and ends all WordPress sessions. Connection "
+"errors keep the current access state."
+msgstr ""
+"Yönetilen dizin hesaplarını saatte bir denetleyin. Yokluğu doğrulanan "
+"hesap, devre dışı AD hesabı, değişen dizin kimliği veya karşılanmayan "
+"oturum açma grubu kuralı erişimi askıya alır ve tüm WordPress oturumlarını "
+"sonlandırır. Bağlantı hataları mevcut erişim durumunu korur."
+
+#: pro/src/Admin.php:107
+msgid "Enable scheduled access removal"
+msgstr "Zamanlanmış erişim kaldırmayı etkinleştir"
+
+#: pro/src/Admin.php:107
+msgid ""
+"Keep user data and content. Restore access after a later successful "
+"directory check. Recovery accounts and super administrators are excluded. "
+"Existing suspensions remain if the task or license stops."
+msgstr ""
+"Kullanıcı verilerini ve içeriği koruyun. Daha sonraki başarılı dizin "
+"denetiminden sonra erişimi geri yükleyin. Kurtarma hesapları ve süper "
+"yöneticiler hariç tutulur. Görev durursa veya lisans devre dışı kalırsa "
+"mevcut askıya almalar korunur."
+
+#: pro/src/Admin.php:207
+msgid "Add row"
+msgstr "Satır ekle"
+
+#: pro/src/Admin.php:262
+msgid "Remove row"
+msgstr "Satırı kaldır"
+
+#: pro/src/Admin.php:71
+msgid "Custom field storage"
+msgstr "Özel alan depolama"
+
+#: pro/src/Admin.php:71
+msgid "Leave the defaults unless your integration uses different user meta keys."
+msgstr "Farklı kullanıcı meta anahtarları kullanmadıkça varsayılanları bırakın."
+
+#: pro/src/Admin.php:72
+#: src/Settings.php:616
+msgid "LDAP value suffix"
+msgstr "LDAP değer eki"
+
+#: pro/src/Admin.php:72
+msgid "Stores the LDAP value, such as phone_ldap."
+msgstr "phone_ldap gibi LDAP değerini saklar."
+
+#: pro/src/Admin.php:73
+#: src/Settings.php:617
+msgid "WordPress value suffix"
+msgstr "WordPress değer eki"
+
+#: pro/src/Admin.php:73
+msgid "Stores the editable WordPress value, such as phone_wp."
+msgstr "phone_wp gibi düzenlenebilir WordPress değerini saklar."
+
+#: pro/src/Admin.php:83
+msgid "Single sign-on (SSO)"
+msgstr "Tek oturum açma (SSO)"
+
+#: pro/src/Admin.php:84
+msgid "Sign users in to WordPress after your web server authenticates them."
+msgstr "Web sunucunuz kullanıcıları doğruladıktan sonra WordPress'e giriş yapın."
+
+#: pro/src/Admin.php:85
+msgid "Enable single sign-on"
+msgstr "Tek oturum açmayı etkinleştir"
+
+#: pro/src/Admin.php:85
+msgid "Users do not need a second login for WordPress."
+msgstr "Kullanıcıların WordPress için ikinci bir giriş yapmasına gerek yoktur."
+
+#: pro/src/Admin.php:87
+msgid ""
+"Configure your web server to authenticate users and set REMOTE_USER. Enter "
+"an LDAP search account on Connection."
+msgstr ""
+"Web sunucunuzu kullanıcıları doğrulamak ve REMOTE_USER'ı ayarlamak için "
+"yapılandırın. Bağlantı kısmına bir LDAP arama hesabı girin."
+
+#: pro/src/Admin.php:88
+msgid ""
+"Do not copy browser headers into REMOTE_USER. Block access that bypasses "
+"web server authentication."
+msgstr ""
+"Tarayıcı başlıklarını REMOTE_USER'a kopyalamayın. Web sunucusu kimlik "
+"doğrulamasını atlayan erişimi engelleyin."
+
+#: pro/src/Admin.php:87
+msgid "Web server authentication"
+msgstr "Web sunucu kimlik doğrulaması"
+
+#: pro/src/Admin.php:88
+msgid "REMOTE_USER is present."
+msgstr "REMOTE_USER mevcut."
+
+#: pro/src/Admin.php:88
+msgid "REMOTE_USER is missing. Check the web server configuration."
+msgstr "REMOTE_USER eksik. Web sunucu yapılandırmasını kontrol edin."
+
+#: pro/src/Audit.php:224
+msgid ""
+"An Enterprise license is required to collect, read, or export audit "
+"history. Existing records are kept."
+msgstr ""
+"Denetim geçmişini toplamak, okumak veya dışa aktarmak için Enterprise "
+"lisansı gerekir. Mevcut kayıtlar korunur."
+
+#: pro/src/Audit.php:229
+msgid "Enterprise audit settings"
+msgstr "Enterprise denetim ayarları"
+
+#: pro/src/Audit.php:211
+msgid "Audit history"
+msgstr "Denetim geçmişi"
+
+#: pro/src/Audit.php:211
+msgid ""
+"Record login results and account changes. Records contain event names and "
+"account IDs. Passwords, directory field values, and credentials are "
+"excluded."
+msgstr ""
+"Oturum açma sonuçlarını ve hesap değişikliklerini kaydedin. Kayıtlar olay "
+"adlarını ve hesap kimliklerini içerir. Parolalar, dizin alanı değerleri ve "
+"kimlik bilgileri hariç tutulur."
+
+#: pro/src/Audit.php:212
+msgid "Enable audit history"
+msgstr "Denetim geçmişini etkinleştir"
+
+#: pro/src/Audit.php:212
+msgid ""
+"Store private WordPress records. Collection is off by default. Existing "
+"records remain when collection stops."
+msgstr ""
+"Özel WordPress kayıtlarını saklayın. Toplama varsayılan olarak kapalıdır. "
+"Toplama durduğunda mevcut kayıtlar korunur."
+
+#: pro/src/Audit.php:213
+msgid "Retention (days)"
+msgstr "Saklama süresi (gün)"
+
+#: pro/src/Audit.php:213
+msgid ""
+"Default: 30. Range: 1 to 3650. A daily task removes older records while "
+"collection is enabled."
+msgstr ""
+"Varsayılan: 30. Aralık: 1 ile 3650. Toplama açıkken günlük görev eski "
+"kayıtları kaldırır."
+
+#: pro/src/Audit.php:229
+msgid "Export CSV"
+msgstr "CSV dışa aktar"
+
+#: pro/src/Audit.php:230
+msgid ""
+"Latest 50 records. The export includes all retained records in this scope. "
+"Times use UTC."
+msgstr ""
+"Son 50 kayıt. Dışa aktarma bu kapsamdaki tüm saklanan kayıtları içerir. "
+"Saatler UTC olarak gösterilir."
+
+#: pro/src/Audit.php:231
+msgid "Time (UTC)"
+msgstr "Saat (UTC)"
+
+#: pro/src/Audit.php:231
+msgid "Event"
+msgstr "Olay"
+
+#: pro/src/Audit.php:231
+msgid "Actor ID"
+msgstr "İşlemi yapanın kimliği"
+
+#: pro/src/Audit.php:231
+msgid "User ID"
+msgstr "Kullanıcı kimliği"
+
+#: pro/src/Audit.php:253
+msgid "You do not have permission to export these records."
+msgstr "Bu kayıtları dışa aktarma izniniz yok."
+
+#: src/Admin.php:90
+msgid "You do not have permission to change these settings."
+msgstr "Bu ayarları değiştirmek için izniniz yok."
+
+#: pro/src/Settings_Rules.php:53
+msgid ""
+"Activate an Enterprise license to change these settings. Your saved "
+"settings are kept."
+msgstr ""
+"Bu ayarları değiştirmek için Enterprise lisansını etkinleştirin. Kayıtlı "
+"ayarlarınız korunur."
+
+#: pro/src/Settings_Rules.php:130
+msgid "A Pro setting is not valid. Check the format and role names."
+msgstr "Bir Pro ayarı geçersiz. Biçimi ve rol adlarını denetleyin."
+
+#: pro/src/Upgrade_Guard.php:84
+msgid ""
+"The update was stopped. Activate Simple LDAP Login Pro to restore LDAP "
+"login."
+msgstr ""
+"Güncelleme durduruldu. LDAP girişini geri yüklemek için Simple LDAP Login "
+"Pro'yu etkinleştirin."
+
+#: pro/src/Upgrade_Guard.php:86
+msgid ""
+"Update blocked: This package does not include all Pro files. To install "
+"Free, deactivate the plugin first. Your installed files and settings are "
+"unchanged."
+msgstr ""
+"Güncelleme engellendi: Bu paket tüm Pro dosyalarını içermiyor. Ücretsiz "
+"sürümü kurmak için önce eklentiyi devre dışı bırakın. Yüklediğiniz dosyalar "
+"ve ayarlar değişmeden kalır."
+
+#: pro/src/Upgrade_Guard.php:113
+msgid "WordPress could not reactivate the plugin."
+msgstr "WordPress eklentiyi yeniden etkinleştiremedi."
+
+#: Simple-LDAP-Login.php:29
+msgid "Simple LDAP Login needs PHP 8.1 or later."
+msgstr "Simple LDAP Login PHP 8.1 veya daha yeni bir sürüm gerektirir."
+
+#: Simple-LDAP-Login.php:39
+msgid "Plugin files are missing. Reinstall Simple LDAP Login from the release ZIP."
+msgstr ""
+"Eklenti dosyaları eksik. Simple LDAP Login'i sürüm ZIP'inden yeniden "
+"yükleyin."
+
+#: src/Admin.php:97
+msgid "The settings scope has changed. Open the settings page and try again."
+msgstr "Ayarlar kapsamı değişti. Ayarlar sayfasını açın ve tekrar deneyin."
+
+#: src/Admin.php:141
+msgid "You do not have permission to view these settings."
+msgstr "Bu ayarları görüntülemek için izniniz yok."
+
+#: src/Admin.php:160
+msgid "LDAP login and SSO are disabled by SLL_DISABLE_LDAP in wp-config.php."
+msgstr ""
+"LDAP girişi ve SSO, wp-config.php'deki SLL_DISABLE_LDAP ile devre dışı "
+"bırakılmıştır."
+
+#: src/Admin.php:164
+msgid ""
+"Your saved settings use backup LDAP servers, SSO, or custom user fields. "
+"Install Simple LDAP Login Pro to use these features. Your settings are kept."
+msgstr ""
+"Kayıtlı ayarlarınız yedek LDAP sunucularını, SSO veya özel kullanıcı "
+"alanlarını kullanıyor. Bu özellikleri kullanmak için Simple LDAP Login Pro "
+"yükleyin. Ayarlarınız korunur."
+
+#: src/Admin.php:169
+msgid ""
+"The saved LDAP search password cannot be read. Enter it again on the "
+"Connection tab."
+msgstr "Kaydedilen LDAP arama şifresi okunamıyor. Bağlantı sekmesinde tekrar girin."
+
+#: src/Admin.php:172
+msgid "PHP LDAP is missing. Ask your host to install it before enabling LDAP login."
+msgstr ""
+"PHP LDAP eksik. LDAP girişini etkinleştirmeden önce barındırma "
+"sağlayıcınızdan bunu yüklemesini isteyin."
+
+#: src/Admin.php:175
+msgid ""
+"LDAP passwords are sent without encryption. Use StartTLS or LDAPS if your "
+"server supports it."
+msgstr ""
+"LDAP şifreleri şifrelenmeden gönderilir. Sunucunuz destekliyorsa StartTLS "
+"veya LDAPS kullanın."
+
+#: src/Admin.php:154
+#: src/Admin.php:177
+msgid "LDAP login settings"
+msgstr "LDAP giriş ayarları"
+
+#: src/Admin.php:207
+msgid "Save settings"
+msgstr "Ayarları kaydet"
+
+#: src/Admin.php:208
+msgid "Settings on other tabs are kept."
+msgstr "Diğer sekmelerdeki ayarlar korunur."
+
+#: src/Admin.php:223
+msgid "LDAP connection"
+msgstr "LDAP bağlantısı"
+
+#: src/Admin.php:224
+msgid "LDAP login"
+msgstr "LDAP girişi"
+
+#: src/Admin.php:224
+msgid "Enable LDAP authentication."
+msgstr "LDAP kimlik doğrulamasını etkinleştir."
+
+#: src/Admin.php:227
+#: src/Settings.php:597
+msgid "Directory type"
+msgstr "Dizin türü"
+
+#: src/Admin.php:229
+msgid "Active Directory"
+msgstr "Active Directory"
+
+#: src/Admin.php:230
+msgid "OpenLDAP / other LDAP directory"
+msgstr "OpenLDAP / diğer LDAP dizini"
+
+#: src/Admin.php:233
+#: src/Settings.php:599
+msgid "LDAP servers"
+msgstr "LDAP sunucuları"
+
+#: src/Admin.php:242
+msgid ""
+"One hostname or IP address per line. An active Pro or Enterprise license "
+"enables backup servers. Without an active license, only the first server is "
+"used."
+msgstr ""
+"Her satıra bir ana bilgisayar adı veya IP adresi girin. Etkin bir Pro veya "
+"Enterprise lisansı yedek sunucuların kullanımını sağlar. Etkin lisans yoksa "
+"yalnızca ilk sunucu kullanılır."
+
+#: src/Admin.php:225
+msgid ""
+"Upgrade to Pro to use backup LDAP servers when your primary server is "
+"unavailable."
+msgstr ""
+"Birincil sunucunuz kullanılamadığında yedek LDAP sunucularını kullanmak "
+"için Pro’ya yükseltin."
+
+#: src/Admin.php:234
+#: src/Settings.php:600
+msgid "Base DN"
+msgstr "Temel DN"
+
+#: src/Admin.php:234
+msgid "Where to search for users. Example: DC=example,DC=org."
+msgstr "Kullanıcıları aramak için nerede. Örnek: DC=example,DC=org."
+
+#: src/Admin.php:235
+#: src/Settings.php:601
+msgid "Username suffix"
+msgstr "Kullanıcı adı eki"
+
+#: src/Admin.php:235
+msgid "Added to usernames without a domain. Example: @example.org."
+msgstr "Alan adı olmayan kullanıcı adlarına eklenir. Örnek: @example.org."
+
+#: src/Admin.php:236
+#: src/Settings.php:602
+msgid "Windows domain"
+msgstr "Windows alanı"
+
+#: src/Admin.php:236
+msgid "Short domain name, such as EXAMPLE. Takes priority over the username suffix."
+msgstr "EXAMPLE gibi kısa alan adı. Kullanıcı adı ekinin önceliğini alır."
+
+#: src/Admin.php:238
+#: src/Admin.php:241
+#: src/Settings.php:598
+msgid "Connection security"
+msgstr "Bağlantı güvenliği"
+
+#: src/Admin.php:238
+msgid "TLS requires a trusted server certificate."
+msgstr "TLS, güvenilir bir sunucu sertifikası gerektirir."
+
+#: src/Admin.php:243
+msgid "StartTLS (recommended)"
+msgstr "StartTLS (önerilir)"
+
+#: src/Admin.php:244
+msgid "LDAPS"
+msgstr "LDAPS"
+
+#: src/Admin.php:245
+msgid "Unencrypted LDAP"
+msgstr "Şifrelenmemiş LDAP"
+
+#: src/Admin.php:247
+msgid "Unencrypted LDAP requires permission on the Advanced tab."
+msgstr "Şifrelenmemiş LDAP, Gelişmiş sekmede izin gerektirir."
+
+#: src/Admin.php:249
+#: src/Settings.php:603
+msgid "Port"
+msgstr "Port"
+
+#: src/Admin.php:249
+msgid "389 for StartTLS; 636 for LDAPS."
+msgstr "StartTLS için 389; LDAPS için 636."
+
+#: src/Admin.php:250
+msgid "Search subfolders"
+msgstr "Alt klasörleri ara"
+
+#: src/Admin.php:250
+msgid "Search all organizational units below the Base DN."
+msgstr "Temel DN'in altındaki tüm organizasyonel birimleri ara."
+
+#: src/Admin.php:252
+msgid "LDAP search account"
+msgstr "LDAP arama hesabı"
+
+#: src/Admin.php:252
+msgid "An LDAP account with read access to users and groups."
+msgstr "Kullanıcılara ve gruplara okuma erişimi olan bir LDAP hesabı."
+
+#: src/Admin.php:253
+msgid "Search account"
+msgstr "Arama hesabı"
+
+#: src/Admin.php:253
+msgid "LDAP bind DN or account name."
+msgstr "LDAP bağlama DN'si veya hesap adı."
+
+#: src/Admin.php:254
+#: src/Settings.php:614
+msgid "Search account password"
+msgstr "Arama hesabı şifresi"
+
+#: src/Admin.php:254
+msgid "Leave blank to keep the saved password."
+msgstr "Kaydedilen şifreyi korumak için boş bırakın."
+
+#: src/Admin.php:262
+msgid "Login rules"
+msgstr "Giriş kuralları"
+
+#: src/Admin.php:263
+msgid "Require LDAP passwords"
+msgstr "LDAP şifrelerini zorunlu kıl"
+
+#: src/Admin.php:263
+msgid "Block WordPress passwords except for recovery access."
+msgstr "Kurtarma erişimi dışında WordPress şifrelerini engelle."
+
+#: src/Admin.php:266
+#: src/Settings.php:612
+msgid "Local recovery access"
+msgstr "Yerel kurtarma erişimi"
+
+#: src/Admin.php:268
+msgid "Selected administrators"
+msgstr "Seçilen yöneticiler"
+
+#: src/Admin.php:269
+msgid "All super administrators (legacy)"
+msgstr "Tüm süper yöneticiler (eski)"
+
+#: src/Admin.php:269
+msgid "All administrators (legacy)"
+msgstr "Tüm yöneticiler (eski)"
+
+#: src/Admin.php:270
+msgid "Off"
+msgstr "Kapalı"
+
+#: src/Admin.php:272
+msgid "Choose who can use a WordPress password when LDAP passwords are required."
+msgstr ""
+"LDAP şifreleri zorunlu olduğunda, bir WordPress şifresi kullanabilecekleri "
+"kişileri seçin."
+
+#: src/Admin.php:275
+msgid "Automatic account creation"
+msgstr "Otomatik hesap oluşturma"
+
+#: src/Admin.php:275
+msgid "Create a WordPress account on the first successful LDAP login."
+msgstr "İlk başarılı LDAP girişi sırasında bir WordPress hesabı oluştur."
+
+#: src/Admin.php:280
+#: src/Settings.php:611
+msgid "Default role"
+msgstr "Varsayılan rol"
+
+#: src/Admin.php:280
+msgid "For new accounts only."
+msgstr "Sadece yeni hesaplar için."
+
+#: src/Admin.php:273
+msgid ""
+"Upgrade to Pro to assign WordPress roles from directory groups at each "
+"login."
+msgstr ""
+"Her oturum açılışında dizin gruplarına göre WordPress rolleri atamak için "
+"Pro’ya yükseltin."
+
+#: src/Admin.php:281
+#: src/Settings.php:609
+msgid "Required groups"
+msgstr "Gerekli gruplar"
+
+#: src/Admin.php:281
+msgid ""
+"One group name per line. Users must belong to at least one. Leave blank to "
+"allow all LDAP users."
+msgstr ""
+"Her satıra bir grup adı. Kullanıcıların en az birine ait olması gerekir. "
+"Tüm LDAP kullanıcılarına izin vermek için boş bırakın."
+
+#: src/Admin.php:275
+msgid ""
+"Upgrade to Enterprise to remove access when staff leave, with hourly "
+"directory checks."
+msgstr ""
+"Çalışanlar ayrıldığında saatlik dizin kontrolleriyle erişimlerini kaldırmak "
+"için Enterprise’a yükseltin."
+
+#: src/Admin.php:295
+#: src/Settings.php:613
+msgid "Recovery accounts"
+msgstr "Kurtarma hesapları"
+
+#: src/Admin.php:305
+msgid ""
+"For Selected administrators only. Use separate local accounts with "
+"WordPress passwords. Hold Ctrl or Command to select multiple accounts."
+msgstr ""
+"Sadece Seçilen yöneticiler için. WordPress şifreleri ile ayrı yerel "
+"hesaplar kullanın. Birden fazla hesabı seçmek için Ctrl veya Command tuşuna "
+"basın."
+
+#: src/Admin.php:320
+msgid "Connection options"
+msgstr "Bağlantı seçenekleri"
+
+#: src/Admin.php:320
+msgid "Change these only if the default values do not work with your directory."
+msgstr "Varsayılan değerler dizininizle çalışmıyorsa bunları yalnızca değiştirin."
+
+#: src/Admin.php:321
+msgid "LDAP timeout (seconds)"
+msgstr "LDAP zaman aşımı (saniye)"
+
+#: src/Admin.php:321
+msgid "Maximum wait for an LDAP operation. Default: 5 seconds."
+msgstr "Bir LDAP işlemi için maksimum bekleme süresi. Varsayılan: 5 saniye."
+
+#: src/Admin.php:322
+#: src/Settings.php:606
+msgid "Login attribute"
+msgstr "Giriş niteliği"
+
+#: src/Admin.php:322
+msgid "Attribute used to find users. Default: uid."
+msgstr "Kullanıcıları bulmak için kullanılan nitelik. Varsayılan: uid."
+
+#: src/Admin.php:323
+msgid "Allow unencrypted LDAP"
+msgstr "Şifrelenmemiş LDAP'a izin ver"
+
+#: src/Admin.php:323
+msgid "Allow passwords to be sent without encryption."
+msgstr "Şifrelerin şifrelenmeden gönderilmesine izin ver."
+
+#: src/Admin.php:325
+msgid "Group search"
+msgstr "Grup araması"
+
+#: src/Admin.php:326
+#: src/Settings.php:610
+msgid "Group base DN"
+msgstr "Grup temel DN"
+
+#: src/Admin.php:326
+msgid "Leave blank to use the user Base DN."
+msgstr "Kullanıcı Temel DN'sini kullanmak için boş bırakın."
+
+#: src/Admin.php:327
+#: src/Settings.php:607
+msgid "Group name attribute"
+msgstr "Grup adı niteliği"
+
+#: src/Admin.php:327
+msgid "Default: cn."
+msgstr "Varsayılan: cn."
+
+#: src/Admin.php:328
+#: src/Settings.php:608
+msgid "Group member attribute"
+msgstr "Grup üye niteliği"
+
+#: src/Admin.php:328
+msgid "Default: memberUid. Use member or uniqueMember if groups store user DNs."
+msgstr ""
+"Varsayılan: memberUid. Gruplar kullanıcı DNs'lerini saklıyorsa member veya "
+"uniqueMember kullanın."
+
+#: src/Admin.php:330
+msgid "Profile attributes"
+msgstr "Profil nitelikleri"
+
+#: src/Admin.php:330
+msgid "LDAP attributes copied to new WordPress accounts."
+msgstr "Yeni WordPress hesaplarına kopyalanan LDAP nitelikleri."
+
+#: src/Admin.php:331
+#: src/Settings.php:618
+msgid "First name attribute"
+msgstr "İsim niteliği"
+
+#: src/Admin.php:332
+#: src/Settings.php:619
+msgid "Last name attribute"
+msgstr "Soyisim niteliği"
+
+#: src/Admin.php:333
+#: src/Settings.php:620
+msgid "Email attribute"
+msgstr "E-posta niteliği"
+
+#: src/Admin.php:334
+#: src/Settings.php:621
+msgid "Website attribute"
+msgstr "Web sitesi niteliği"
+
+#: src/Admin.php:340
+msgid ""
+"Upgrade to Pro to update profiles at login and copy custom fields from your "
+"directory."
+msgstr ""
+"Oturum açıldığında profilleri güncellemek ve dizininizden özel alanları "
+"kopyalamak için Pro’ya yükseltin."
+
+#: src/Admin.php:337
+msgid "Data retention"
+msgstr "Veri saklama"
+
+#: src/Admin.php:338
+msgid "Delete settings when removing the plugin"
+msgstr "Eklentiyi kaldırırken ayarları sil"
+
+#: src/Admin.php:338
+msgid ""
+"Delete saved settings and LDAP credentials when WordPress deletes the "
+"plugin. Keep user accounts."
+msgstr ""
+"Eklenti kaldırıldığında kaydedilen ayarları ve LDAP kimlik bilgilerini "
+"silin. Kullanıcı hesaplarını koruyun."
+
+#: src/Admin.php:351
+msgid "We can help."
+msgstr "Yardımcı olabiliriz."
+
+#: src/Admin.php:352
+msgid ""
+"Get help with setup, login, or licensing. Send us a message and we will "
+"reply by email."
+msgstr ""
+"Kurulum, giriş veya lisanslama konusunda yardım alın. Bize mesaj gönderin, "
+"e-postayla yanıtlayalım."
+
+#: src/Admin.php:354
+msgid "Contact Support"
+msgstr "Destek ile iletişime geçin"
+
+#: src/Admin.php:355
+msgid "View Documentation"
+msgstr "Belgeleri görüntüleyin"
+
+#: src/Admin.php:361
+msgid "Common questions"
+msgstr "Sık sorulan sorular"
+
+#: src/Admin.php:365
+msgid "Installation and setup"
+msgstr "Yükleme ve kurulum"
+
+#: src/Admin.php:365
+msgid "Connect your directory and test your first login."
+msgstr "Dizininizi bağlayın ve ilk girişinizi test edin."
+
+#: src/Admin.php:366
+msgid "Connection and login tests"
+msgstr "Bağlantı ve giriş testleri"
+
+#: src/Admin.php:366
+msgid "Check the connection and find the cause of login errors."
+msgstr "Bağlantıyı kontrol edin ve giriş hatalarının nedenini bulun."
+
+#: src/Admin.php:367
+msgid "Administrator recovery"
+msgstr "Yönetici erişimini kurtarma"
+
+#: src/Admin.php:367
+msgid "Restore access if LDAP login stops working."
+msgstr "LDAP girişi çalışmazsa erişimi geri yükleyin."
+
+#: src/Admin.php:368
+msgid "Pro and Enterprise licensing"
+msgstr "Pro ve Enterprise lisansları"
+
+#: src/Admin.php:368
+msgid "Activate a license, check your plan, or renew."
+msgstr "Bir lisansı etkinleştirin, planınızı kontrol edin veya yenileyin."
+
+#: src/Admin.php:350
+msgid "Recovery"
+msgstr "Kurtarma"
+
+#: src/Admin.php:385
+msgid "In wp-config.php, add this line before the line that loads wp-settings.php:"
+msgstr ""
+"wp-config.php dosyasında bu satırı wp-settings.php dosyasını yükleyen "
+"satırdan önce ekleyin:"
+
+#: src/Admin.php:387
+msgid ""
+"This disables LDAP login and SSO. Log in with a local WordPress "
+"administrator password, correct the settings, then remove this line."
+msgstr ""
+"Bu, LDAP girişini ve SSO’yu devre dışı bırakır. Yerel WordPress yönetici "
+"parolasıyla giriş yapın, ayarları düzeltin ve ardından bu satırı kaldırın."
+
+#: src/Admin.php:388
+msgid "Alternative: rename the plugin folder"
+msgstr "Alternatif: eklenti klasörünü yeniden adlandırın"
+
+#: src/Admin.php:389
+#. translators: %s: Installed plugin directory, shown as an inline path.
+#, php-format
+msgid ""
+"If you are locked out, rename the %s folder on your WordPress server. Log "
+"in with a WordPress administrator password, then restore the folder and "
+"correct the settings."
+msgstr ""
+"Giriş yapamıyorsanız WordPress sunucunuzdaki %s klasörünü yeniden "
+"adlandırın. WordPress yönetici parolasıyla giriş yapın, ardından klasör "
+"adını geri yükleyin ve ayarları düzeltin."
+
+#: src/Admin.php:384
+msgid ""
+"For certificate errors, check that the LDAP server certificate has not "
+"expired and matches the server name in Connection settings."
+msgstr ""
+"Sertifika hatalarında LDAP sunucusunun sertifikasının süresinin dolmadığını "
+"ve Bağlantı ayarlarındaki sunucu adıyla eşleştiğini kontrol edin."
+
+#: src/Admin.php:385
+msgid ""
+"On the WordPress server, add your root and intermediate CA certificates to "
+"the trust configuration used by PHP's LDAP library. For OpenLDAP, use "
+"TLS_CACERT in ldap.conf. Restart PHP after changes, then save Connection "
+"settings to test again."
+msgstr ""
+"WordPress sunucusunda kök ve ara CA sertifikalarınızı PHP LDAP kitaplığının "
+"kullandığı güven yapılandırmasına ekleyin. OpenLDAP için ldap.conf içinde "
+"TLS_CACERT kullanın. Değişikliklerden sonra PHP’yi yeniden başlatın ve "
+"yeniden test etmek için Bağlantı ayarlarını kaydedin."
+
+#: src/Admin.php:366
+msgid "LDAP tests"
+msgstr "LDAP testleri"
+
+#: src/Admin.php:367
+msgid "Tests use saved settings."
+msgstr "Testler kaydedilen ayarları kullanır."
+
+#: src/Admin.php:346
+msgid ""
+"Save your settings, then run both tests. Keep this administrator session "
+"open."
+msgstr ""
+"Ayarlarınızı kaydedin, ardından her iki testi de çalıştırın. Bu yönetici "
+"oturumunu açık tutun."
+
+#: src/Admin.php:348
+msgid ""
+"Tests check the connection, password, and required groups. They do not "
+"create accounts or sign users in."
+msgstr ""
+"Testler bağlantıyı, şifreyi ve gerekli grupları kontrol eder. Hesap "
+"oluşturmaz veya kullanıcıları oturum açtırmaz."
+
+#: src/Admin.php:219
+#: src/Admin.php:391
+#: src/Admin.php:393
+msgid "Check Connection"
+msgstr "Bağlantıyı kontrol et"
+
+#: src/Admin.php:373
+msgid "Connect to LDAP and test the search account, if set."
+msgstr "LDAP'a bağlanın ve ayarlanan arama hesabını test edin."
+
+#: src/Admin.php:346
+#: src/Admin.php:382
+msgid "Test LDAP login"
+msgstr "LDAP girişini test et"
+
+#: src/Admin.php:379
+msgid "Check an LDAP username, password, and group membership."
+msgstr "Bir LDAP kullanıcı adını, şifreyi ve grup üyeliğini kontrol edin."
+
+#: src/Admin.php:380
+msgid "LDAP username"
+msgstr "LDAP kullanıcı adı"
+
+#: src/Admin.php:381
+msgid "LDAP password"
+msgstr "LDAP şifresi"
+
+#: src/Admin.php:349
+msgid "After both tests pass, enable LDAP and try logging in from another browser."
+msgstr ""
+"Her iki test geçtikten sonra LDAP'ı etkinleştirin ve başka bir tarayıcıdan "
+"giriş yapmayı deneyin."
+
+#: src/Admin.php:456
+msgid "Upgrade Now"
+msgstr "Şimdi yükseltin"
+
+#: src/Admin.php:537
+msgid "Settings saved."
+msgstr "Ayarlar kaydedildi."
+
+#: src/Admin.php:538
+msgid "Connection test passed."
+msgstr "Bağlantı testi başarılı."
+
+#: src/Admin.php:539
+msgid ""
+"Cannot connect to LDAP. Check the server, port, TLS certificate, and search "
+"account."
+msgstr ""
+"LDAP'a bağlanılamadı. Sunucu, port, TLS sertifikası ve arama hesabını "
+"kontrol edin."
+
+#: src/Admin.php:540
+msgid "LDAP login test passed. No account was created."
+msgstr "LDAP giriş testi başarılı. Hiçbir hesap oluşturulmadı."
+
+#: src/Admin.php:541
+msgid "LDAP login test failed. Check the username, password, and required groups."
+msgstr ""
+"LDAP giriş testi başarısız. Kullanıcı adını, şifreyi ve gerekli grupları "
+"kontrol edin."
+
+#: src/Admin.php:542
+msgid "Could not save settings. Check the values and try again."
+msgstr "Ayarları kaydedemedim. Değerleri kontrol edin ve tekrar deneyin."
+
+#: src/Admin.php:586
+msgid "Connection"
+msgstr "Bağlantı"
+
+#: src/Admin.php:587
+msgid "Access"
+msgstr "Erişim"
+
+#: src/Admin.php:588
+msgid "Advanced"
+msgstr "Gelişmiş"
+
+#: src/Admin.php:641
+msgid "Testing"
+msgstr "Test"
+
+#: src/Admin.php:642
+msgid "Support"
+msgstr "Destek"
+
+#: src/Authenticator.php:151
+msgid ""
+"Your LDAP login is valid, but you need a WordPress account. Contact your "
+"site administrator."
+msgstr ""
+"LDAP girişiniz geçerli, ancak bir WordPress hesabına ihtiyacınız var. Site "
+"yöneticinizle iletişime geçin."
+
+#: src/Authenticator.php:154
+msgid ""
+"Your LDAP username is not a valid WordPress username. Contact your site "
+"administrator."
+msgstr ""
+"LDAP kullanıcı adınız geçerli bir WordPress kullanıcı adı değil. Site "
+"yöneticinizle iletişime geçin."
+
+#: src/Authenticator.php:158
+msgid ""
+"The default WordPress role is not available. Contact your site "
+"administrator."
+msgstr "Varsayılan WordPress rolü mevcut değil. Site yöneticinizle iletişime geçin."
+
+#: src/Authenticator.php:175
+msgid "Could not create your WordPress account. Contact your site administrator."
+msgstr "WordPress hesabınızı oluşturamadım. Site yöneticinizle iletişime geçin."
+
+#: src/Authenticator.php:180
+msgid "Use your WordPress password for this recovery account."
+msgstr "Bu kurtarma hesabı için WordPress şifrenizi kullanın."
+
+#: pro/src/Admin.php:54
+msgid "License"
+msgstr "Lisans"
+
+#: src/Commerce.php:58
+msgid "Go Pro"
+msgstr "Pro sürümüne geç"
+
+#: src/Commerce.php:73
+msgid ""
+"Could not check your license. Features in your last verified plan remain "
+"active. Try again on the License tab."
+msgstr ""
+"Lisansınız kontrol edilemedi. Son doğrulanan planınızdaki özellikler etkin "
+"kalır. Lisans sekmesinden yeniden deneyin."
+
+#: src/Commerce.php:75
+msgid ""
+"Your license has expired. Paid features are off. Renew your license, then "
+"select Check license on the License tab."
+msgstr ""
+"Lisansınızın süresi doldu. Ücretli özellikler kapalıdır. Lisansınızı "
+"yenileyin, ardından Lisans sekmesinden Lisansı kontrol et seçeneğini seçin."
+
+#: src/Commerce.php:77
+msgid ""
+"Your license plan has not been verified. Select Check license on the "
+"License tab. Paid features stay off until the plan is verified."
+msgstr ""
+"Lisans planınız doğrulanmadı. Lisans sekmesinden Lisansı kontrol et "
+"seçeneğini seçin. Plan doğrulanana kadar ücretli özellikler kapalı kalır."
+
+#: src/Commerce.php:79
+msgid ""
+"Activate your Pro or Enterprise license on the License tab to use paid "
+"features."
+msgstr ""
+"Ücretli özellikleri kullanmak için Lisans sekmesinden Pro veya Enterprise "
+"lisansınızı etkinleştirin."
+
+#: src/Commerce.php:99
+msgid "Backup LDAP servers"
+msgstr "Yedek LDAP sunucuları"
+
+#: src/Commerce.php:100
+msgid ""
+"Try the next server if a directory server cannot be reached. All servers "
+"must use the same directory."
+msgstr ""
+"Bir dizin sunucusuna ulaşılamıyorsa sonraki sunucuyu deneyin. Tüm sunucular "
+"aynı dizini kullanmalıdır."
+
+#: src/Commerce.php:100
+msgid ""
+"Give staff one less password prompt. Sign in through your web server with "
+"Kerberos, NTLM, or other server authentication."
+msgstr ""
+"Çalışanların parola girme sayısını azaltın. Kerberos, NTLM veya başka bir "
+"sunucu kimlik doğrulaması ile web sunucunuz üzerinden oturum açın."
+
+#: src/Commerce.php:105
+msgid ""
+"Turn directory groups into WordPress roles at each login. Give editors, "
+"authors, and other teams the access they need."
+msgstr ""
+"Her oturum açılışında dizin gruplarını WordPress rollerine dönüştürün. "
+"Editörlere, yazarlara ve diğer ekiplere ihtiyaç duydukları erişimi verin."
+
+#: src/Commerce.php:110
+msgid ""
+"Keep names, email addresses, and websites current. Copy directory values to "
+"existing WordPress profiles at login."
+msgstr ""
+"Adları, e-posta adreslerini ve web sitelerini güncel tutun. Oturum "
+"açılışında dizin değerlerini mevcut WordPress profillerine kopyalayın."
+
+#: src/Commerce.php:115
+msgid ""
+"Put phone numbers, departments, and other LDAP fields to work in WordPress. "
+"Map text and number fields for your theme or plugins."
+msgstr ""
+"Telefon numaralarını, departmanları ve diğer LDAP alanlarını WordPress "
+"içinde kullanın. Temanız veya eklentileriniz için metin ve sayı alanlarını "
+"eşleyin."
+
+#: src/Commerce.php:120
+msgid ""
+"Have accounts ready before the first login. Import directory users each "
+"hour, with filters for groups and directory location."
+msgstr ""
+"Hesapları ilk oturum açılışından önce hazırlayın. Grup ve dizin konumu "
+"filtreleriyle dizin kullanıcılarını her saat içe aktarın."
+
+#: src/Commerce.php:125
+msgid ""
+"Check managed accounts each hour. Suspend access and end sessions when "
+"directory checks confirm removal or lost access. Keep user content."
+msgstr ""
+"Yönetilen hesapları her saat kontrol edin. Dizin kontrolleri silinmeyi veya "
+"erişim kaybını doğruladığında erişimi askıya alın ve oturumları "
+"sonlandırın. Kullanıcı içeriğini koruyun."
+
+#: src/Commerce.php:130
+msgid ""
+"Manage access across your WordPress network. Use directory groups to assign "
+"site membership and roles, then remove access when groups change."
+msgstr ""
+"WordPress ağınızdaki erişimi yönetin. Dizin gruplarıyla site üyeliği ve "
+"roller atayın; gruplar değiştiğinde erişimi kaldırın."
+
+#: src/Commerce.php:134
+msgid "Audit history and CSV export"
+msgstr "Denetim geçmişi ve CSV dışa aktarma"
+
+#: src/Commerce.php:135
+msgid ""
+"See login results, role changes, imports, and access changes in one place. "
+"Set record retention and export the history to CSV."
+msgstr ""
+"Oturum açma sonuçlarını, rol değişikliklerini, içe aktarmaları ve erişim "
+"değişikliklerini tek yerde görün. Kayıt saklama süresini ayarlayın ve "
+"geçmişi CSV olarak dışa aktarın."
+
+#: src/Commerce.php:141
+msgid "Simple LDAP Login Pro and Enterprise"
+msgstr "Simple LDAP Login Pro ve Enterprise"
+
+#: src/Commerce.php:147
+msgid "Keep WordPress access up to date."
+msgstr "WordPress erişimini güncel tutun."
+
+#: src/Commerce.php:148
+msgid ""
+"Upgrade to Pro to assign roles and update profiles at login. Upgrade to "
+"Enterprise to remove access when staff leave, before their next login."
+msgstr ""
+"Oturum açıldığında rol atamak ve profilleri güncellemek için Pro’ya "
+"yükseltin. Çalışanlar ayrıldığında bir sonraki oturum açılışından önce "
+"erişimlerini kaldırmak için Enterprise’a yükseltin."
+
+#: src/Commerce.php:144
+msgid "Both plans cover one site. Your existing LDAP settings stay in place."
+msgstr "Her iki plan da bir siteyi kapsar. Mevcut LDAP ayarlarınız korunur."
+
+#: src/Commerce.php:148
+msgid "Pro — $99/year"
+msgstr "Pro — yıllık $99"
+
+#: src/Commerce.php:149
+msgid "Enterprise — $499/year"
+msgstr "Enterprise — yıllık $499"
+
+#: src/Commerce.php:154
+msgid "All Free features, plus:"
+msgstr "Tüm Free özelliklerine ek olarak:"
+
+#: src/Commerce.php:154
+msgid "Everything in Pro, plus:"
+msgstr "Pro içindeki her şeye ek olarak:"
+
+#: src/Commerce.php:161
+msgid ""
+"Remove access and end active sessions when hourly directory checks confirm "
+"that access is lost. Keep user content and an audit history."
+msgstr ""
+"Saatlik dizin kontrolleri erişim kaybını doğruladığında erişimi kaldırın ve "
+"etkin oturumları sonlandırın. Kullanıcı içeriğini ve denetim geçmişini "
+"koruyun."
+
+#: src/Commerce.php:168
+msgid "Buy Pro"
+msgstr "Pro satın al"
+
+#: src/Commerce.php:168
+#: src/Commerce.php:201
+msgid "Get Enterprise"
+msgstr "Enterprise edin"
+
+#: src/Commerce.php:168
+msgid "Buy Enterprise"
+msgstr "Enterprise satın al"
+
+#: src/Commerce.php:171
+msgid ""
+"Scheduled tasks use WordPress cron and need site traffic or a system task. "
+"Single sign-on requires web server authentication. Multisite rules require "
+"network activation."
+msgstr ""
+"Zamanlanmış görevler WordPress cron kullanır ve site trafiği veya bir "
+"sistem görevi gerektirir. Tek oturum açma için web sunucusu kimlik "
+"doğrulaması gerekir. Çoklu site kuralları ağ üzerinden etkinleştirme "
+"gerektirir."
+
+#: src/Commerce.php:177
+msgid ""
+"PaidCommunities handles checkout. It receives your IP address, browser "
+"details, and the information you enter at checkout. LDAP credentials and "
+"user records are not sent."
+msgstr ""
+"Ödeme işlemlerini PaidCommunities yürütür. IP adresinizi, tarayıcı "
+"bilgilerinizi ve ödeme sırasında girdiğiniz bilgileri alır. LDAP kimlik "
+"bilgileri ve kullanıcı kayıtları gönderilmez."
+
+#: pro/src/Admin.php:89
+msgid "License status updated."
+msgstr "Lisans durumu güncellendi."
+
+#: pro/src/Admin.php:89
+#: pro/src/License.php:210
+msgid "Could not verify the license. Check your key and connection, then try again."
+msgstr ""
+"Lisans doğrulanamadı. Anahtarınızı ve bağlantınızı kontrol edin, ardından "
+"tekrar deneyin."
+
+#: src/Commerce.php:111
+msgid "Enter the license key from your purchase receipt."
+msgstr "Satın alma fişinizden lisans anahtarını girin."
+
+#: src/Commerce.php:190
+msgid "Plan not verified"
+msgstr "Plan doğrulanmadı"
+
+#: pro/src/Admin.php:95
+msgid "Expired"
+msgstr "Süresi dolmuş"
+
+#: pro/src/Admin.php:96
+msgid "Inactive"
+msgstr "Pasif"
+
+#: pro/src/Admin.php:99
+msgid "License status"
+msgstr "Lisans durumu"
+
+#: pro/src/Admin.php:99
+msgid "Active"
+msgstr "Aktif"
+
+#: pro/src/Admin.php:94
+#: pro/src/Admin.php:99
+msgid "Not activated"
+msgstr "Etkinleştirilmedi"
+
+#: src/Commerce.php:197
+msgid "Current plan"
+msgstr "Geçerli plan"
+
+#: src/Commerce.php:197
+#: src/Commerce.php:209
+msgid "Enterprise"
+msgstr "Enterprise"
+
+#: src/Commerce.php:197
+#: src/Commerce.php:208
+msgid "Pro"
+msgstr "Pro"
+
+#: src/Commerce.php:199
+msgid ""
+"Enterprise adds scheduled account import and access removal, multisite "
+"membership rules, and audit history with CSV export."
+msgstr ""
+"Enterprise, zamanlanmış hesap içe aktarma ve erişim kaldırma, çoklu site "
+"üyelik kuralları ve CSV dışa aktarmalı denetim geçmişini ekler."
+
+#: pro/src/Admin.php:113
+msgid "Check license"
+msgstr "Lisansı kontrol et"
+
+#: src/Commerce.php:239
+msgid ""
+"PaidCommunities handles licenses. Activation sends your license key, site "
+"domain, plugin version, and server IP address. License checks send site "
+"details. LDAP credentials and user records are not sent."
+msgstr ""
+"Lisansları PaidCommunities yönetir. Etkinleştirme; lisans anahtarınızı, "
+"site alan adını, eklenti sürümünü ve sunucu IP adresini gönderir. Lisans "
+"kontrolleri site bilgilerini gönderir. LDAP kimlik bilgileri ve kullanıcı "
+"kayıtları gönderilmez."
+
+#: pro/src/Admin.php:144
+msgid "Select a license action."
+msgstr "Bir lisans eylemi seçin."
+
+#: pro/src/Admin.php:107
+msgid "License key"
+msgstr "Lisans anahtarı"
+
+#: pro/src/Admin.php:111
+msgid "Activate license"
+msgstr "Lisansı etkinleştir"
+
+#: pro/src/Admin.php:114
+msgid "Deactivate license"
+msgstr "Lisansı devre dışı bırak"
+
+#: src/Commerce.php:249
+msgid "Activating license…"
+msgstr "Lisans etkinleştiriliyor…"
+
+#: src/Commerce.php:250
+msgid "Deactivating license…"
+msgstr "Lisans devre dışı bırakılıyor…"
+
+#: src/Commerce.php:251
+msgid "License error"
+msgstr "Lisans hatası"
+
+#: src/Commerce.php:252
+msgid "License updated"
+msgstr "Lisans güncellendi"
+
+#: src/Ldap_Client.php:440
+msgid ""
+"LDAP login failed. Check your username and password or contact your site "
+"administrator."
+msgstr ""
+"LDAP girişi başarısız. Kullanıcı adınızı ve şifrenizi kontrol edin veya "
+"site yöneticinizle iletişime geçin."
+
+#: src/Ldap_Client.php:442
+msgid "Your account is not allowed to log in to this site."
+msgstr "Hesabınız bu siteye giriş yapmaya izin verilmiyor."
+
+#: src/Ldap_Client.php:444
+msgid "LDAP login is unavailable. Contact your site administrator."
+msgstr "LDAP girişi kullanılamıyor. Lütfen site yöneticinizle iletişime geçin."
+
+#: src/Secrets.php:24
+msgid "PHP OpenSSL is required to save the LDAP search password."
+msgstr "LDAP arama şifresini kaydetmek için PHP OpenSSL gereklidir."
+
+#: src/Secrets.php:92
+msgid ""
+"Could not read or save the LDAP search password. Enter it again. If this "
+"continues, ask your host to check OpenSSL and the encryption key."
+msgstr ""
+"LDAP arama şifresi okunamadı veya kaydedilemedi. Lütfen tekrar girin. Bu "
+"devam ederse, barındırma sağlayıcınızdan OpenSSL ve şifreleme anahtarını "
+"kontrol etmesini isteyin."
+
+#: src/Settings.php:310
+msgid ""
+"Select a recovery account on the Access tab, or turn local recovery access "
+"Off."
+msgstr ""
+"Erişim sekmesinde bir kurtarma hesabı seçin veya yerel kurtarma erişimini "
+"kapatın."
+
+#: src/Settings.php:318
+msgid ""
+"Enable Allow unencrypted LDAP on the Advanced tab, or choose StartTLS or "
+"LDAPS."
+msgstr ""
+"Gelişmiş sekmede Şifrelenmemiş LDAP'ı etkinleştirin veya StartTLS veya "
+"LDAPS'yi seçin."
+
+#: src/Settings.php:341
+msgid "A custom field mapping uses a protected or invalid WordPress user meta key."
+msgstr ""
+"Özel alan eşlemesi korumalı veya geçersiz bir WordPress kullanıcı meta "
+"anahtarı kullanıyor."
+
+#: src/Settings.php:346
+msgid "Enter a Base DN and at least one LDAP server before enabling LDAP login."
+msgstr ""
+"LDAP girişini etkinleştirmeden önce bir Temel DN ve en az bir LDAP sunucusu "
+"girin."
+
+#: src/Settings.php:349
+msgid "WordPress could not save the settings. Try again."
+msgstr "WordPress ayarları kaydedilemedi. Lütfen tekrar deneyin."
+
+#: src/Settings.php:604
+msgid "LDAP protocol version"
+msgstr "LDAP protokol sürümü"
+
+#: src/Settings.php:605
+msgid "LDAP timeout"
+msgstr "LDAP zaman aşımı"
+
+#: src/Settings.php:623
+msgid "Check the submitted settings. No changes were saved."
+msgstr "Gönderilen ayarları kontrol edin. Hiçbir değişiklik kaydedilmedi."
+
+#: src/Settings.php:626
+#. translators: %s: setting label.
+#, php-format
+msgid "Check %s. No changes were saved."
+msgstr "Kontrol edin %s. Hiçbir değişiklik kaydedilmedi."
+
+#: src/Commerce.php:181
+msgid ""
+"Install the paid ZIP from your receipt. On the License tab, activate your "
+"key or select Check license. Your LDAP settings stay in place."
+msgstr ""
+"Makbuzunuzdaki ücretli ZIP dosyasını yükleyin. Lisans sekmesinde "
+"anahtarınızı etkinleştirin veya Lisansı kontrol et seçeneğini seçin. LDAP "
+"ayarlarınız korunur."
+
+#: src/Commerce.php:205
+msgid ""
+"Get Enterprise opens checkout for a new license. It does not change or "
+"cancel your Pro subscription. Manage that subscription separately through "
+"PaidCommunities. After purchase, deactivate this key and activate the new "
+"key."
+msgstr ""
+"Enterprise edin, yeni bir lisans için ödeme sayfasını açar. Pro "
+"aboneliğinizi değiştirmez veya iptal etmez. Bu aboneliği PaidCommunities "
+"üzerinden ayrı olarak yönetin. Satın aldıktan sonra bu anahtarı devre dışı "
+"bırakın ve yeni anahtarı etkinleştirin."

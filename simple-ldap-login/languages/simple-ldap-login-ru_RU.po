@@ -1,0 +1,1579 @@
+# Copyright (C) 2026 Clif Griffin Development Inc.
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Simple LDAP Login 2.0.1\n"
+"Report-Msgid-Bugs-To: "
+"https://wordpress.org/support/plugin/simple-ldap-login\n"
+"Last-Translator: gpt-po v1.2.3\n"
+"Language-Team: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-10-30T15:26:17+00:00\n"
+"PO-Revision-Date: 2026-10-30 00:00+0000\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: simple-ldap-login\n"
+"Language: ru_RU\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: Simple-LDAP-Login.php src/Admin.php:64 src/Admin.php:65 src/Admin.php:149
+#. Plugin Name of the plugin
+msgid "Simple LDAP Login"
+msgstr "Simple LDAP Login"
+
+#: Simple-LDAP-Login.php
+#. Plugin URI of the plugin
+msgid "https://github.com/clifgriffin/simple-ldap-login"
+msgstr "https://github.com/clifgriffin/simple-ldap-login"
+
+#: Simple-LDAP-Login.php
+#. Description of the plugin
+msgid "Connect WordPress accounts to Active Directory or OpenLDAP."
+msgstr "Подключите учетные записи WordPress к Active Directory или OpenLDAP."
+
+#: Simple-LDAP-Login.php
+#. Author of the plugin
+msgid "Clif Griffin Development Inc."
+msgstr "Clif Griffin Development Inc."
+
+#: Simple-LDAP-Login.php
+#. Author URI of the plugin
+msgid "https://clifgriffin.com"
+msgstr "https://clifgriffin.com"
+
+#: pro/src/Accounts.php:205
+msgid "Your directory account is suspended. Contact your site administrator."
+msgstr ""
+"Ваша учётная запись каталога заблокирована. Обратитесь к администратору "
+"сайта."
+
+#: pro/src/Accounts.php:249
+msgid "The directory identity has changed. Contact your site administrator."
+msgstr ""
+"Идентификатор учётной записи в каталоге изменился. Обратитесь к "
+"администратору сайта."
+
+#: pro/src/Admin.php:49
+msgid "User data"
+msgstr "Данные пользователя"
+
+#: pro/src/Admin.php:50
+#: pro/src/Admin.php:84
+msgid "Single sign-on"
+msgstr "Единый вход"
+
+#: pro/src/Admin.php:59
+msgid "Accounts"
+msgstr "Учётные записи"
+
+#: pro/src/Admin.php:60
+msgid "Audit"
+msgstr "Аудит"
+
+#: pro/src/Admin.php:70
+msgid "Profile updates"
+msgstr "Обновления профилей"
+
+#: pro/src/Admin.php:70
+msgid ""
+"Copy standard LDAP profile fields to existing WordPress accounts at login. "
+"Recovery accounts and super administrators are excluded."
+msgstr ""
+"Копировать стандартные поля профиля LDAP в существующие учётные записи "
+"WordPress при входе. Учётные записи восстановления и суперадминистраторы "
+"исключены."
+
+#: pro/src/Admin.php:71
+msgid "Update profiles at login"
+msgstr "Обновлять профили при входе"
+
+#: pro/src/Admin.php:71
+msgid ""
+"Replace names, email, and website with directory values. Empty directory "
+"values clear the field. A missing or invalid email stops the update."
+msgstr ""
+"Заменять имена, адрес электронной почты и сайт значениями из каталога. "
+"Пустые значения в каталоге очищают поле. Отсутствующий или неверный адрес "
+"электронной почты останавливает обновление."
+
+#: pro/src/Admin.php:60
+msgid "Custom user fields"
+msgstr "Пользовательские поля"
+
+#: pro/src/Admin.php:60
+msgid ""
+"Copy LDAP fields, such as phone number or department, to WordPress at "
+"login. Your theme or other plugins can use these values."
+msgstr ""
+"Копируйте поля LDAP, такие как номер телефона или отдел, в WordPress при "
+"входе. Ваша тема или другие плагины могут использовать эти значения."
+
+#: pro/src/Admin.php:61
+#: src/Settings.php:615
+msgid "Field mappings"
+msgstr "Сопоставление полей"
+
+#: pro/src/Admin.php:81
+msgid "LDAP attribute"
+msgstr "Атрибут LDAP"
+
+#: pro/src/Admin.php:85
+msgid "WordPress meta key"
+msgstr "Ключ метаданных WordPress"
+
+#: pro/src/Admin.php:89
+msgid "Type"
+msgstr "Тип"
+
+#: pro/src/Admin.php:91
+msgid "Text"
+msgstr "Текст"
+
+#: pro/src/Admin.php:92
+msgid "Number"
+msgstr "Число"
+
+#: pro/src/Admin.php:85
+msgid "Group roles"
+msgstr "Роли групп"
+
+#: pro/src/Admin.php:85
+msgid ""
+"Set the WordPress role from LDAP groups at each login. The first matching "
+"rule applies. If no rule matches, use the default role. Recovery accounts "
+"and super administrators are excluded."
+msgstr ""
+"Назначать роль WordPress по группам LDAP при каждом входе. Применяется "
+"первое подходящее правило. Если ни одно правило не подходит, используется "
+"роль по умолчанию. Учётные записи восстановления и суперадминистраторы "
+"исключены."
+
+#: pro/src/Admin.php:86
+msgid "Group-to-role rules"
+msgstr "Правила назначения ролей группам"
+
+#: pro/src/Admin.php:112
+#: pro/src/Admin.php:155
+msgid "LDAP group"
+msgstr "Группа LDAP"
+
+#: pro/src/Admin.php:116
+#: pro/src/Admin.php:164
+msgid "WordPress role"
+msgstr "Роль WordPress"
+
+#: pro/src/Admin.php:108
+msgid ""
+"Enterprise includes scheduled account import, scheduled access removal, and "
+"multisite membership rules. Your saved settings are kept."
+msgstr ""
+"Enterprise включает плановый импорт учётных записей, плановое отключение "
+"доступа и правила членства в сети сайтов. Сохранённые настройки сохраняются."
+
+#: pro/src/Admin.php:108
+#: pro/src/Audit.php:224
+msgid "View Enterprise upgrade"
+msgstr "Посмотреть переход на Enterprise"
+
+#: pro/src/Admin.php:113
+msgid "Enterprise account settings"
+msgstr "Настройки учётных записей Enterprise"
+
+#: pro/src/Admin.php:97
+msgid "Multisite membership"
+msgstr "Участие в сети сайтов"
+
+#: pro/src/Admin.php:97
+msgid ""
+"Assign site membership and roles from directory groups. The first matching "
+"rule for each site applies. These rules replace the group role rules for "
+"network activation."
+msgstr ""
+"Назначать участие в сайтах и роли по группам каталога. Для каждого сайта "
+"применяется первое подходящее правило. При активации в сети эти правила "
+"заменяют правила ролей групп."
+
+#: pro/src/Admin.php:98
+msgid "Group-to-site rules"
+msgstr "Правила назначения сайтов группам"
+
+#: pro/src/Audit.php:231
+msgid "Site ID"
+msgstr "ID сайта"
+
+#: pro/src/Admin.php:101
+msgid "Scheduled account import"
+msgstr "Импорт учётных записей по расписанию"
+
+#: pro/src/Admin.php:101
+msgid ""
+"Import directory accounts once per hour through WordPress scheduled tasks. "
+"Set a search account on Connection. Site traffic or a system task must run "
+"WordPress cron."
+msgstr ""
+"Импортировать учётные записи каталога раз в час через запланированные "
+"задачи WordPress. Задайте учётную запись поиска на вкладке «Подключение». "
+"Посещения сайта или системная задача должны запускать cron WordPress."
+
+#: pro/src/Admin.php:102
+msgid "Enable scheduled import"
+msgstr "Включить импорт по расписанию"
+
+#: pro/src/Admin.php:102
+msgid ""
+"Create accounts without a first login. Existing local accounts are "
+"excluded. No user session is created."
+msgstr ""
+"Создавать учётные записи без первого входа. Существующие локальные учётные "
+"записи исключены. Сеанс пользователя не создаётся."
+
+#: pro/src/Admin.php:103
+msgid "Import Base DN"
+msgstr "Базовый DN импорта"
+
+#: pro/src/Admin.php:103
+msgid "Leave blank to use the connection Base DN."
+msgstr "Оставьте пустым, чтобы использовать базовый DN подключения."
+
+#: pro/src/Admin.php:104
+msgid "Import groups"
+msgstr "Группы для импорта"
+
+#: pro/src/Admin.php:104
+msgid ""
+"One group per line. Import users in at least one group. Leave blank to "
+"import all users below the Import Base DN. Login group restrictions also "
+"apply."
+msgstr ""
+"Одна группа на строку. Импортируются пользователи хотя бы одной из этих "
+"групп. Оставьте пустым для импорта всех пользователей в поддереве базового "
+"DN импорта. Ограничения групп входа также действуют."
+
+#: pro/src/Admin.php:106
+msgid "Scheduled access removal"
+msgstr "Отзыв доступа по расписанию"
+
+#: pro/src/Admin.php:106
+msgid ""
+"Check managed directory accounts once per hour. A confirmed missing "
+"account, disabled AD account, changed directory identity, or failed login "
+"group rule suspends access and ends all WordPress sessions. Connection "
+"errors keep the current access state."
+msgstr ""
+"Проверять управляемые учётные записи каталога раз в час. Подтверждённое "
+"отсутствие учётной записи, отключённая учётная запись AD, изменение "
+"идентификатора в каталоге или невыполненное правило группы входа блокируют "
+"доступ и завершают все сеансы WordPress. Ошибки подключения сохраняют "
+"текущее состояние доступа."
+
+#: pro/src/Admin.php:107
+msgid "Enable scheduled access removal"
+msgstr "Включить отзыв доступа по расписанию"
+
+#: pro/src/Admin.php:107
+msgid ""
+"Keep user data and content. Restore access after a later successful "
+"directory check. Recovery accounts and super administrators are excluded. "
+"Existing suspensions remain if the task or license stops."
+msgstr ""
+"Сохранять данные и содержимое пользователей. Восстанавливать доступ после "
+"последующей успешной проверки каталога. Учётные записи восстановления и "
+"суперадминистраторы исключены. Существующие блокировки сохраняются при "
+"остановке задачи или прекращении действия лицензии."
+
+#: pro/src/Admin.php:207
+msgid "Add row"
+msgstr "Добавить строку"
+
+#: pro/src/Admin.php:262
+msgid "Remove row"
+msgstr "Удалить строку"
+
+#: pro/src/Admin.php:71
+msgid "Custom field storage"
+msgstr "Хранение пользовательских полей"
+
+#: pro/src/Admin.php:71
+msgid "Leave the defaults unless your integration uses different user meta keys."
+msgstr ""
+"Оставьте значения по умолчанию, если ваша интеграция не использует другие "
+"мета-ключи пользователя."
+
+#: pro/src/Admin.php:72
+#: src/Settings.php:616
+msgid "LDAP value suffix"
+msgstr "Суффикс значения LDAP"
+
+#: pro/src/Admin.php:72
+msgid "Stores the LDAP value, such as phone_ldap."
+msgstr "Хранит значение LDAP, например phone_ldap."
+
+#: pro/src/Admin.php:73
+#: src/Settings.php:617
+msgid "WordPress value suffix"
+msgstr "Суффикс значения WordPress"
+
+#: pro/src/Admin.php:73
+msgid "Stores the editable WordPress value, such as phone_wp."
+msgstr "Хранит редактируемое значение WordPress, например phone_wp."
+
+#: pro/src/Admin.php:83
+msgid "Single sign-on (SSO)"
+msgstr "Единый вход (SSO)"
+
+#: pro/src/Admin.php:84
+msgid "Sign users in to WordPress after your web server authenticates them."
+msgstr "Авторизуйте пользователей в WordPress после их аутентификации веб-сервером."
+
+#: pro/src/Admin.php:85
+msgid "Enable single sign-on"
+msgstr "Включить единую аутентификацию"
+
+#: pro/src/Admin.php:85
+msgid "Users do not need a second login for WordPress."
+msgstr "Пользователям не требуется второй вход в WordPress."
+
+#: pro/src/Admin.php:87
+msgid ""
+"Configure your web server to authenticate users and set REMOTE_USER. Enter "
+"an LDAP search account on Connection."
+msgstr ""
+"Настройте ваш веб-сервер для аутентификации пользователей и установите "
+"REMOTE_USER. Введите учетную запись поиска LDAP в разделе Подключение."
+
+#: pro/src/Admin.php:88
+msgid ""
+"Do not copy browser headers into REMOTE_USER. Block access that bypasses "
+"web server authentication."
+msgstr ""
+"Не копируйте заголовки браузера в REMOTE_USER. Блокируйте доступ, который "
+"обходит аутентификацию веб-сервера."
+
+#: pro/src/Admin.php:87
+msgid "Web server authentication"
+msgstr "Аутентификация веб-сервера"
+
+#: pro/src/Admin.php:88
+msgid "REMOTE_USER is present."
+msgstr "REMOTE_USER присутствует."
+
+#: pro/src/Admin.php:88
+msgid "REMOTE_USER is missing. Check the web server configuration."
+msgstr "REMOTE_USER отсутствует. Проверьте конфигурацию веб-сервера."
+
+#: pro/src/Audit.php:224
+msgid ""
+"An Enterprise license is required to collect, read, or export audit "
+"history. Existing records are kept."
+msgstr ""
+"Для сбора, чтения или экспорта истории аудита нужна лицензия Enterprise. "
+"Существующие записи сохраняются."
+
+#: pro/src/Audit.php:229
+msgid "Enterprise audit settings"
+msgstr "Настройки аудита Enterprise"
+
+#: pro/src/Audit.php:211
+msgid "Audit history"
+msgstr "История аудита"
+
+#: pro/src/Audit.php:211
+msgid ""
+"Record login results and account changes. Records contain event names and "
+"account IDs. Passwords, directory field values, and credentials are "
+"excluded."
+msgstr ""
+"Регистрировать результаты входа и изменения учётных записей. Записи "
+"содержат названия событий и ID учётных записей. Пароли, значения полей "
+"каталога и данные доступа исключены."
+
+#: pro/src/Audit.php:212
+msgid "Enable audit history"
+msgstr "Включить историю аудита"
+
+#: pro/src/Audit.php:212
+msgid ""
+"Store private WordPress records. Collection is off by default. Existing "
+"records remain when collection stops."
+msgstr ""
+"Хранить закрытые записи WordPress. Сбор по умолчанию отключён. Существующие "
+"записи сохраняются при остановке сбора."
+
+#: pro/src/Audit.php:213
+msgid "Retention (days)"
+msgstr "Срок хранения (дни)"
+
+#: pro/src/Audit.php:213
+msgid ""
+"Default: 30. Range: 1 to 3650. A daily task removes older records while "
+"collection is enabled."
+msgstr ""
+"По умолчанию: 30. Диапазон: от 1 до 3650. Ежедневная задача удаляет старые "
+"записи, пока сбор включён."
+
+#: pro/src/Audit.php:229
+msgid "Export CSV"
+msgstr "Экспорт CSV"
+
+#: pro/src/Audit.php:230
+msgid ""
+"Latest 50 records. The export includes all retained records in this scope. "
+"Times use UTC."
+msgstr ""
+"Последние 50 записей. Экспорт включает все сохранённые записи в этой "
+"области. Время указано в UTC."
+
+#: pro/src/Audit.php:231
+msgid "Time (UTC)"
+msgstr "Время (UTC)"
+
+#: pro/src/Audit.php:231
+msgid "Event"
+msgstr "Событие"
+
+#: pro/src/Audit.php:231
+msgid "Actor ID"
+msgstr "ID исполнителя"
+
+#: pro/src/Audit.php:231
+msgid "User ID"
+msgstr "ID пользователя"
+
+#: pro/src/Audit.php:253
+msgid "You do not have permission to export these records."
+msgstr "У вас нет разрешения на экспорт этих записей."
+
+#: src/Admin.php:90
+msgid "You do not have permission to change these settings."
+msgstr "У вас нет разрешения на изменение этих настроек."
+
+#: pro/src/Settings_Rules.php:53
+msgid ""
+"Activate an Enterprise license to change these settings. Your saved "
+"settings are kept."
+msgstr ""
+"Активируйте лицензию Enterprise, чтобы изменить эти настройки. Сохранённые "
+"настройки сохраняются."
+
+#: pro/src/Settings_Rules.php:130
+msgid "A Pro setting is not valid. Check the format and role names."
+msgstr "Недопустимый параметр Pro. Проверьте формат и названия ролей."
+
+#: pro/src/Upgrade_Guard.php:84
+msgid ""
+"The update was stopped. Activate Simple LDAP Login Pro to restore LDAP "
+"login."
+msgstr ""
+"Обновление было остановлено. Активируйте Simple LDAP Login Pro, чтобы "
+"восстановить LDAP-вход."
+
+#: pro/src/Upgrade_Guard.php:86
+msgid ""
+"Update blocked: This package does not include all Pro files. To install "
+"Free, deactivate the plugin first. Your installed files and settings are "
+"unchanged."
+msgstr ""
+"Обновление заблокировано: этот пакет не включает все файлы Pro. Чтобы "
+"установить Free, сначала деактивируйте плагин. Ваши установленные файлы и "
+"настройки остаются без изменений."
+
+#: pro/src/Upgrade_Guard.php:113
+msgid "WordPress could not reactivate the plugin."
+msgstr "WordPress не смог повторно активировать плагин."
+
+#: Simple-LDAP-Login.php:29
+msgid "Simple LDAP Login needs PHP 8.1 or later."
+msgstr "Simple LDAP Login требует PHP 8.1 или новее."
+
+#: Simple-LDAP-Login.php:39
+msgid "Plugin files are missing. Reinstall Simple LDAP Login from the release ZIP."
+msgstr ""
+"Файлы плагина отсутствуют. Переустановите Simple LDAP Login из ZIP-архива "
+"релиза."
+
+#: src/Admin.php:97
+msgid "The settings scope has changed. Open the settings page and try again."
+msgstr "Область настроек изменилась. Откройте страницу настроек и попробуйте снова."
+
+#: src/Admin.php:141
+msgid "You do not have permission to view these settings."
+msgstr "У вас нет разрешения на просмотр этих настроек."
+
+#: src/Admin.php:160
+msgid "LDAP login and SSO are disabled by SLL_DISABLE_LDAP in wp-config.php."
+msgstr "Вход через LDAP и SSO отключены из-за SLL_DISABLE_LDAP в wp-config.php."
+
+#: src/Admin.php:164
+msgid ""
+"Your saved settings use backup LDAP servers, SSO, or custom user fields. "
+"Install Simple LDAP Login Pro to use these features. Your settings are kept."
+msgstr ""
+"Сохранённые настройки используют резервные серверы LDAP, SSO или "
+"настраиваемые поля пользователей. Установите Simple LDAP Login Pro для "
+"использования этих функций. Ваши настройки сохраняются."
+
+#: src/Admin.php:169
+msgid ""
+"The saved LDAP search password cannot be read. Enter it again on the "
+"Connection tab."
+msgstr ""
+"Сохраненный пароль поиска LDAP не может быть прочитан. Введите его снова на "
+"вкладке Подключение."
+
+#: src/Admin.php:172
+msgid "PHP LDAP is missing. Ask your host to install it before enabling LDAP login."
+msgstr ""
+"PHP LDAP отсутствует. Попросите вашего хостинг-провайдера установить его "
+"перед включением LDAP входа."
+
+#: src/Admin.php:175
+msgid ""
+"LDAP passwords are sent without encryption. Use StartTLS or LDAPS if your "
+"server supports it."
+msgstr ""
+"Пароли LDAP отправляются без шифрования. Используйте StartTLS или LDAPS, "
+"если ваш сервер это поддерживает."
+
+#: src/Admin.php:154
+#: src/Admin.php:177
+msgid "LDAP login settings"
+msgstr "Настройки входа через LDAP"
+
+#: src/Admin.php:207
+msgid "Save settings"
+msgstr "Сохранить настройки"
+
+#: src/Admin.php:208
+msgid "Settings on other tabs are kept."
+msgstr "Настройки на других вкладках сохранены."
+
+#: src/Admin.php:223
+msgid "LDAP connection"
+msgstr "LDAP соединение"
+
+#: src/Admin.php:224
+msgid "LDAP login"
+msgstr "LDAP вход"
+
+#: src/Admin.php:224
+msgid "Enable LDAP authentication."
+msgstr "Включить LDAP аутентификацию."
+
+#: src/Admin.php:227
+#: src/Settings.php:597
+msgid "Directory type"
+msgstr "Тип каталога"
+
+#: src/Admin.php:229
+msgid "Active Directory"
+msgstr "Active Directory"
+
+#: src/Admin.php:230
+msgid "OpenLDAP / other LDAP directory"
+msgstr "OpenLDAP / другой LDAP каталог"
+
+#: src/Admin.php:233
+#: src/Settings.php:599
+msgid "LDAP servers"
+msgstr "LDAP серверы"
+
+#: src/Admin.php:242
+msgid ""
+"One hostname or IP address per line. An active Pro or Enterprise license "
+"enables backup servers. Without an active license, only the first server is "
+"used."
+msgstr ""
+"Одно имя хоста или IP-адрес в каждой строке. Активная лицензия Pro или "
+"Enterprise позволяет использовать резервные серверы. Без активной лицензии "
+"используется только первый сервер."
+
+#: src/Admin.php:225
+msgid ""
+"Upgrade to Pro to use backup LDAP servers when your primary server is "
+"unavailable."
+msgstr ""
+"Перейдите на Pro, чтобы использовать резервные серверы LDAP, когда основной "
+"сервер недоступен."
+
+#: src/Admin.php:234
+#: src/Settings.php:600
+msgid "Base DN"
+msgstr "Базовый DN"
+
+#: src/Admin.php:234
+msgid "Where to search for users. Example: DC=example,DC=org."
+msgstr "Где искать пользователей. Пример: DC=example,DC=org."
+
+#: src/Admin.php:235
+#: src/Settings.php:601
+msgid "Username suffix"
+msgstr "Суффикс имени пользователя"
+
+#: src/Admin.php:235
+msgid "Added to usernames without a domain. Example: @example.org."
+msgstr "Добавляется к именам пользователей без домена. Пример: @example.org."
+
+#: src/Admin.php:236
+#: src/Settings.php:602
+msgid "Windows domain"
+msgstr "Домашний домен"
+
+#: src/Admin.php:236
+msgid "Short domain name, such as EXAMPLE. Takes priority over the username suffix."
+msgstr ""
+"Короткое имя домена, например EXAMPLE. Имеет приоритет над суффиксом имени "
+"пользователя."
+
+#: src/Admin.php:238
+#: src/Admin.php:241
+#: src/Settings.php:598
+msgid "Connection security"
+msgstr "Безопасность соединения"
+
+#: src/Admin.php:238
+msgid "TLS requires a trusted server certificate."
+msgstr "TLS требует доверенного сертификата сервера."
+
+#: src/Admin.php:243
+msgid "StartTLS (recommended)"
+msgstr "StartTLS (рекомендуется)"
+
+#: src/Admin.php:244
+msgid "LDAPS"
+msgstr "LDAPS"
+
+#: src/Admin.php:245
+msgid "Unencrypted LDAP"
+msgstr "Не зашифрованный LDAP"
+
+#: src/Admin.php:247
+msgid "Unencrypted LDAP requires permission on the Advanced tab."
+msgstr "Не зашифрованный LDAP требует разрешения на вкладке Расширенные."
+
+#: src/Admin.php:249
+#: src/Settings.php:603
+msgid "Port"
+msgstr "Порт"
+
+#: src/Admin.php:249
+msgid "389 for StartTLS; 636 for LDAPS."
+msgstr "389 для StartTLS; 636 для LDAPS."
+
+#: src/Admin.php:250
+msgid "Search subfolders"
+msgstr "Искать подпапки"
+
+#: src/Admin.php:250
+msgid "Search all organizational units below the Base DN."
+msgstr "Искать все организационные единицы ниже базового DN."
+
+#: src/Admin.php:252
+msgid "LDAP search account"
+msgstr "LDAP учетная запись для поиска"
+
+#: src/Admin.php:252
+msgid "An LDAP account with read access to users and groups."
+msgstr "LDAP учетная запись с правами чтения пользователей и групп."
+
+#: src/Admin.php:253
+msgid "Search account"
+msgstr "Учетная запись для поиска"
+
+#: src/Admin.php:253
+msgid "LDAP bind DN or account name."
+msgstr "LDAP bind DN или имя учетной записи."
+
+#: src/Admin.php:254
+#: src/Settings.php:614
+msgid "Search account password"
+msgstr "Пароль учетной записи для поиска"
+
+#: src/Admin.php:254
+msgid "Leave blank to keep the saved password."
+msgstr "Оставьте пустым, чтобы сохранить сохраненный пароль."
+
+#: src/Admin.php:262
+msgid "Login rules"
+msgstr "Правила входа"
+
+#: src/Admin.php:263
+msgid "Require LDAP passwords"
+msgstr "Требовать пароли LDAP"
+
+#: src/Admin.php:263
+msgid "Block WordPress passwords except for recovery access."
+msgstr "Блокировать пароли WordPress, кроме доступа для восстановления."
+
+#: src/Admin.php:266
+#: src/Settings.php:612
+msgid "Local recovery access"
+msgstr "Локальный доступ для восстановления"
+
+#: src/Admin.php:268
+msgid "Selected administrators"
+msgstr "Выбранные администраторы"
+
+#: src/Admin.php:269
+msgid "All super administrators (legacy)"
+msgstr "Все супер администраторы (наследие)"
+
+#: src/Admin.php:269
+msgid "All administrators (legacy)"
+msgstr "Все администраторы (наследие)"
+
+#: src/Admin.php:270
+msgid "Off"
+msgstr "Выключено"
+
+#: src/Admin.php:272
+msgid "Choose who can use a WordPress password when LDAP passwords are required."
+msgstr ""
+"Выберите, кто может использовать пароль WordPress, когда требуются пароли "
+"LDAP."
+
+#: src/Admin.php:275
+msgid "Automatic account creation"
+msgstr "Автоматическое создание учетных записей"
+
+#: src/Admin.php:275
+msgid "Create a WordPress account on the first successful LDAP login."
+msgstr "Создать учетную запись WordPress при первом успешном входе через LDAP."
+
+#: src/Admin.php:280
+#: src/Settings.php:611
+msgid "Default role"
+msgstr "Роль по умолчанию"
+
+#: src/Admin.php:280
+msgid "For new accounts only."
+msgstr "Только для новых учетных записей."
+
+#: src/Admin.php:273
+msgid ""
+"Upgrade to Pro to assign WordPress roles from directory groups at each "
+"login."
+msgstr ""
+"Перейдите на Pro, чтобы назначать роли WordPress по группам каталога при "
+"каждом входе."
+
+#: src/Admin.php:281
+#: src/Settings.php:609
+msgid "Required groups"
+msgstr "Обязательные группы"
+
+#: src/Admin.php:281
+msgid ""
+"One group name per line. Users must belong to at least one. Leave blank to "
+"allow all LDAP users."
+msgstr ""
+"Одно имя группы на строку. Пользователи должны принадлежать хотя бы к "
+"одной. Оставьте пустым, чтобы разрешить всем пользователям LDAP."
+
+#: src/Admin.php:275
+msgid ""
+"Upgrade to Enterprise to remove access when staff leave, with hourly "
+"directory checks."
+msgstr ""
+"Перейдите на Enterprise, чтобы закрывать доступ ушедшим сотрудникам с "
+"помощью ежечасных проверок каталога."
+
+#: src/Admin.php:295
+#: src/Settings.php:613
+msgid "Recovery accounts"
+msgstr "Учетные записи для восстановления"
+
+#: src/Admin.php:305
+msgid ""
+"For Selected administrators only. Use separate local accounts with "
+"WordPress passwords. Hold Ctrl or Command to select multiple accounts."
+msgstr ""
+"Только для выбранных администраторов. Используйте отдельные локальные "
+"учетные записи с паролями WordPress. Удерживайте Ctrl или Command, чтобы "
+"выбрать несколько учетных записей."
+
+#: src/Admin.php:320
+msgid "Connection options"
+msgstr "Опции соединения"
+
+#: src/Admin.php:320
+msgid "Change these only if the default values do not work with your directory."
+msgstr ""
+"Изменяйте это только в том случае, если значения по умолчанию не работают с "
+"вашим каталогом."
+
+#: src/Admin.php:321
+msgid "LDAP timeout (seconds)"
+msgstr "Таймаут LDAP (секунды)"
+
+#: src/Admin.php:321
+msgid "Maximum wait for an LDAP operation. Default: 5 seconds."
+msgstr "Максимальное время ожидания для операции LDAP. По умолчанию: 5 секунд."
+
+#: src/Admin.php:322
+#: src/Settings.php:606
+msgid "Login attribute"
+msgstr "Атрибут входа"
+
+#: src/Admin.php:322
+msgid "Attribute used to find users. Default: uid."
+msgstr "Атрибут, используемый для поиска пользователей. По умолчанию: uid."
+
+#: src/Admin.php:323
+msgid "Allow unencrypted LDAP"
+msgstr "Разрешить не зашифрованный LDAP"
+
+#: src/Admin.php:323
+msgid "Allow passwords to be sent without encryption."
+msgstr "Разрешить отправку паролей без шифрования."
+
+#: src/Admin.php:325
+msgid "Group search"
+msgstr "Поиск группы"
+
+#: src/Admin.php:326
+#: src/Settings.php:610
+msgid "Group base DN"
+msgstr "Базовый DN группы"
+
+#: src/Admin.php:326
+msgid "Leave blank to use the user Base DN."
+msgstr "Оставьте пустым, чтобы использовать базовый DN пользователя."
+
+#: src/Admin.php:327
+#: src/Settings.php:607
+msgid "Group name attribute"
+msgstr "Атрибут имени группы"
+
+#: src/Admin.php:327
+msgid "Default: cn."
+msgstr "По умолчанию: cn."
+
+#: src/Admin.php:328
+#: src/Settings.php:608
+msgid "Group member attribute"
+msgstr "Атрибут члена группы"
+
+#: src/Admin.php:328
+msgid "Default: memberUid. Use member or uniqueMember if groups store user DNs."
+msgstr ""
+"По умолчанию: memberUid. Используйте member или uniqueMember, если группы "
+"хранят DN пользователей."
+
+#: src/Admin.php:330
+msgid "Profile attributes"
+msgstr "Атрибуты профиля"
+
+#: src/Admin.php:330
+msgid "LDAP attributes copied to new WordPress accounts."
+msgstr "Атрибуты LDAP, скопированные в новые учетные записи WordPress."
+
+#: src/Admin.php:331
+#: src/Settings.php:618
+msgid "First name attribute"
+msgstr "Атрибут имени"
+
+#: src/Admin.php:332
+#: src/Settings.php:619
+msgid "Last name attribute"
+msgstr "Атрибут фамилии"
+
+#: src/Admin.php:333
+#: src/Settings.php:620
+msgid "Email attribute"
+msgstr "Атрибут электронной почты"
+
+#: src/Admin.php:334
+#: src/Settings.php:621
+msgid "Website attribute"
+msgstr "Атрибут веб-сайта"
+
+#: src/Admin.php:340
+msgid ""
+"Upgrade to Pro to update profiles at login and copy custom fields from your "
+"directory."
+msgstr ""
+"Перейдите на Pro, чтобы обновлять профили при входе и копировать "
+"произвольные поля из каталога."
+
+#: src/Admin.php:337
+msgid "Data retention"
+msgstr "Хранение данных"
+
+#: src/Admin.php:338
+msgid "Delete settings when removing the plugin"
+msgstr "Удалить настройки при удалении плагина"
+
+#: src/Admin.php:338
+msgid ""
+"Delete saved settings and LDAP credentials when WordPress deletes the "
+"plugin. Keep user accounts."
+msgstr ""
+"Удалить сохраненные настройки и учетные данные LDAP, когда WordPress "
+"удаляет плагин. Сохранить учетные записи пользователей."
+
+#: src/Admin.php:351
+msgid "We can help."
+msgstr "Мы можем помочь."
+
+#: src/Admin.php:352
+msgid ""
+"Get help with setup, login, or licensing. Send us a message and we will "
+"reply by email."
+msgstr ""
+"Получите помощь с настройкой, входом или лицензированием. Напишите нам, и "
+"мы ответим по электронной почте."
+
+#: src/Admin.php:354
+msgid "Contact Support"
+msgstr "Связаться с поддержкой"
+
+#: src/Admin.php:355
+msgid "View Documentation"
+msgstr "Открыть документацию"
+
+#: src/Admin.php:361
+msgid "Common questions"
+msgstr "Частые вопросы"
+
+#: src/Admin.php:365
+msgid "Installation and setup"
+msgstr "Установка и настройка"
+
+#: src/Admin.php:365
+msgid "Connect your directory and test your first login."
+msgstr "Подключите каталог и проверьте первый вход."
+
+#: src/Admin.php:366
+msgid "Connection and login tests"
+msgstr "Проверки подключения и входа"
+
+#: src/Admin.php:366
+msgid "Check the connection and find the cause of login errors."
+msgstr "Проверьте подключение и найдите причину ошибок входа."
+
+#: src/Admin.php:367
+msgid "Administrator recovery"
+msgstr "Восстановление доступа администратора"
+
+#: src/Admin.php:367
+msgid "Restore access if LDAP login stops working."
+msgstr "Восстановите доступ, если вход через LDAP перестал работать."
+
+#: src/Admin.php:368
+msgid "Pro and Enterprise licensing"
+msgstr "Лицензии Pro и Enterprise"
+
+#: src/Admin.php:368
+msgid "Activate a license, check your plan, or renew."
+msgstr "Активируйте лицензию, проверьте тариф или продлите его."
+
+#: src/Admin.php:350
+msgid "Recovery"
+msgstr "Восстановление"
+
+#: src/Admin.php:385
+msgid "In wp-config.php, add this line before the line that loads wp-settings.php:"
+msgstr ""
+"В wp-config.php добавьте эту строку перед строкой, которая загружает "
+"wp-settings.php:"
+
+#: src/Admin.php:387
+msgid ""
+"This disables LDAP login and SSO. Log in with a local WordPress "
+"administrator password, correct the settings, then remove this line."
+msgstr ""
+"Это отключает вход через LDAP и SSO. Войдите с паролем локального "
+"администратора WordPress, исправьте настройки, затем удалите эту строку."
+
+#: src/Admin.php:388
+msgid "Alternative: rename the plugin folder"
+msgstr "Другой способ: переименовать папку плагина"
+
+#: src/Admin.php:389
+#. translators: %s: Installed plugin directory, shown as an inline path.
+#, php-format
+msgid ""
+"If you are locked out, rename the %s folder on your WordPress server. Log "
+"in with a WordPress administrator password, then restore the folder and "
+"correct the settings."
+msgstr ""
+"Если вы не можете войти, переименуйте папку %s на сервере WordPress. "
+"Войдите с паролем администратора WordPress, затем восстановите имя папки и "
+"исправьте настройки."
+
+#: src/Admin.php:384
+msgid ""
+"For certificate errors, check that the LDAP server certificate has not "
+"expired and matches the server name in Connection settings."
+msgstr ""
+"При ошибках сертификата проверьте, что срок действия сертификата сервера "
+"LDAP не истёк и он соответствует имени сервера в настройках подключения."
+
+#: src/Admin.php:385
+msgid ""
+"On the WordPress server, add your root and intermediate CA certificates to "
+"the trust configuration used by PHP's LDAP library. For OpenLDAP, use "
+"TLS_CACERT in ldap.conf. Restart PHP after changes, then save Connection "
+"settings to test again."
+msgstr ""
+"На сервере WordPress добавьте сертификаты корневых и промежуточных центров "
+"сертификации в конфигурацию доверия, используемую библиотекой LDAP для PHP. "
+"Для OpenLDAP используйте TLS_CACERT в ldap.conf. После изменений "
+"перезапустите PHP и сохраните настройки подключения, чтобы повторить "
+"проверку."
+
+#: src/Admin.php:366
+msgid "LDAP tests"
+msgstr "Тесты LDAP"
+
+#: src/Admin.php:367
+msgid "Tests use saved settings."
+msgstr "Тесты используют сохраненные настройки."
+
+#: src/Admin.php:346
+msgid ""
+"Save your settings, then run both tests. Keep this administrator session "
+"open."
+msgstr ""
+"Сохраните свои настройки, затем выполните оба теста. Оставьте эту сессию "
+"администратора открытой."
+
+#: src/Admin.php:348
+msgid ""
+"Tests check the connection, password, and required groups. They do not "
+"create accounts or sign users in."
+msgstr ""
+"Тесты проверяют соединение, пароль и необходимые группы. Они не создают "
+"учетные записи и не входят в систему."
+
+#: src/Admin.php:219
+#: src/Admin.php:391
+#: src/Admin.php:393
+msgid "Check Connection"
+msgstr "Проверить подключение"
+
+#: src/Admin.php:373
+msgid "Connect to LDAP and test the search account, if set."
+msgstr ""
+"Подключитесь к LDAP и протестируйте учетную запись поиска, если она "
+"установлена."
+
+#: src/Admin.php:346
+#: src/Admin.php:382
+msgid "Test LDAP login"
+msgstr "Тест LDAP входа"
+
+#: src/Admin.php:379
+msgid "Check an LDAP username, password, and group membership."
+msgstr "Проверьте имя пользователя LDAP, пароль и членство в группе."
+
+#: src/Admin.php:380
+msgid "LDAP username"
+msgstr "Имя пользователя LDAP"
+
+#: src/Admin.php:381
+msgid "LDAP password"
+msgstr "Пароль LDAP"
+
+#: src/Admin.php:349
+msgid "After both tests pass, enable LDAP and try logging in from another browser."
+msgstr ""
+"После успешного прохождения обоих тестов включите LDAP и попробуйте войти "
+"из другого браузера."
+
+#: src/Admin.php:456
+msgid "Upgrade Now"
+msgstr "Перейти на платную версию"
+
+#: src/Admin.php:537
+msgid "Settings saved."
+msgstr "Настройки сохранены."
+
+#: src/Admin.php:538
+msgid "Connection test passed."
+msgstr "Тест соединения пройден."
+
+#: src/Admin.php:539
+msgid ""
+"Cannot connect to LDAP. Check the server, port, TLS certificate, and search "
+"account."
+msgstr ""
+"Не удается подключиться к LDAP. Проверьте сервер, порт, сертификат TLS и "
+"учетную запись поиска."
+
+#: src/Admin.php:540
+msgid "LDAP login test passed. No account was created."
+msgstr "Тест входа LDAP пройден. Учетная запись не была создана."
+
+#: src/Admin.php:541
+msgid "LDAP login test failed. Check the username, password, and required groups."
+msgstr ""
+"Тест входа LDAP не удался. Проверьте имя пользователя, пароль и необходимые "
+"группы."
+
+#: src/Admin.php:542
+msgid "Could not save settings. Check the values and try again."
+msgstr "Не удалось сохранить настройки. Проверьте значения и попробуйте снова."
+
+#: src/Admin.php:586
+msgid "Connection"
+msgstr "Соединение"
+
+#: src/Admin.php:587
+msgid "Access"
+msgstr "Доступ"
+
+#: src/Admin.php:588
+msgid "Advanced"
+msgstr "Дополнительно"
+
+#: src/Admin.php:641
+msgid "Testing"
+msgstr "Тестирование"
+
+#: src/Admin.php:642
+msgid "Support"
+msgstr "Поддержка"
+
+#: src/Authenticator.php:151
+msgid ""
+"Your LDAP login is valid, but you need a WordPress account. Contact your "
+"site administrator."
+msgstr ""
+"Ваш вход LDAP действителен, но вам нужна учетная запись WordPress. "
+"Свяжитесь с администратором сайта."
+
+#: src/Authenticator.php:154
+msgid ""
+"Your LDAP username is not a valid WordPress username. Contact your site "
+"administrator."
+msgstr ""
+"Ваше имя пользователя LDAP не является действительным именем пользователя "
+"WordPress. Свяжитесь с администратором сайта."
+
+#: src/Authenticator.php:158
+msgid ""
+"The default WordPress role is not available. Contact your site "
+"administrator."
+msgstr "Роль WordPress по умолчанию недоступна. Свяжитесь с администратором сайта."
+
+#: src/Authenticator.php:175
+msgid "Could not create your WordPress account. Contact your site administrator."
+msgstr ""
+"Не удалось создать вашу учетную запись WordPress. Свяжитесь с "
+"администратором сайта."
+
+#: src/Authenticator.php:180
+msgid "Use your WordPress password for this recovery account."
+msgstr "Используйте свой пароль WordPress для этой учетной записи восстановления."
+
+#: pro/src/Admin.php:54
+msgid "License"
+msgstr "Лицензия"
+
+#: src/Commerce.php:58
+msgid "Go Pro"
+msgstr "Выбрать Pro"
+
+#: src/Commerce.php:73
+msgid ""
+"Could not check your license. Features in your last verified plan remain "
+"active. Try again on the License tab."
+msgstr ""
+"Не удалось проверить лицензию. Функции последнего подтверждённого плана "
+"остаются активными. Повторите попытку на вкладке «Лицензия»."
+
+#: src/Commerce.php:75
+msgid ""
+"Your license has expired. Paid features are off. Renew your license, then "
+"select Check license on the License tab."
+msgstr ""
+"Срок действия лицензии истёк. Платные функции отключены. Продлите лицензию, "
+"затем выберите «Проверить лицензию» на вкладке «Лицензия»."
+
+#: src/Commerce.php:77
+msgid ""
+"Your license plan has not been verified. Select Check license on the "
+"License tab. Paid features stay off until the plan is verified."
+msgstr ""
+"План лицензии не подтверждён. Выберите «Проверить лицензию» на вкладке "
+"«Лицензия». Платные функции отключены до подтверждения плана."
+
+#: src/Commerce.php:79
+msgid ""
+"Activate your Pro or Enterprise license on the License tab to use paid "
+"features."
+msgstr ""
+"Активируйте лицензию Pro или Enterprise на вкладке «Лицензия», чтобы "
+"использовать платные функции."
+
+#: src/Commerce.php:99
+msgid "Backup LDAP servers"
+msgstr "Резервные серверы LDAP"
+
+#: src/Commerce.php:100
+msgid ""
+"Try the next server if a directory server cannot be reached. All servers "
+"must use the same directory."
+msgstr ""
+"Попробуйте следующий сервер, если сервер каталогов недоступен. Все серверы "
+"должны использовать один и тот же каталог."
+
+#: src/Commerce.php:100
+msgid ""
+"Give staff one less password prompt. Sign in through your web server with "
+"Kerberos, NTLM, or other server authentication."
+msgstr ""
+"Избавьте сотрудников от одного запроса пароля. Выполняйте вход через "
+"веб-сервер с Kerberos, NTLM или другой серверной аутентификацией."
+
+#: src/Commerce.php:105
+msgid ""
+"Turn directory groups into WordPress roles at each login. Give editors, "
+"authors, and other teams the access they need."
+msgstr ""
+"Назначайте роли WordPress по группам каталога при каждом входе. "
+"Предоставляйте редакторам, авторам и другим командам нужный доступ."
+
+#: src/Commerce.php:110
+msgid ""
+"Keep names, email addresses, and websites current. Copy directory values to "
+"existing WordPress profiles at login."
+msgstr ""
+"Поддерживайте актуальность имён, адресов электронной почты и сайтов. "
+"Копируйте значения каталога в существующие профили WordPress при входе."
+
+#: src/Commerce.php:115
+msgid ""
+"Put phone numbers, departments, and other LDAP fields to work in WordPress. "
+"Map text and number fields for your theme or plugins."
+msgstr ""
+"Используйте телефоны, отделы и другие поля LDAP в WordPress. Сопоставляйте "
+"текстовые и числовые поля для темы или плагинов."
+
+#: src/Commerce.php:120
+msgid ""
+"Have accounts ready before the first login. Import directory users each "
+"hour, with filters for groups and directory location."
+msgstr ""
+"Подготовьте учётные записи до первого входа. Импортируйте пользователей "
+"каталога каждый час с фильтрами по группам и расположению в каталоге."
+
+#: src/Commerce.php:125
+msgid ""
+"Check managed accounts each hour. Suspend access and end sessions when "
+"directory checks confirm removal or lost access. Keep user content."
+msgstr ""
+"Проверяйте управляемые учётные записи каждый час. Приостанавливайте доступ "
+"и завершайте сеансы, когда проверки каталога подтверждают удаление или "
+"потерю доступа. Сохраняйте содержимое пользователей."
+
+#: src/Commerce.php:130
+msgid ""
+"Manage access across your WordPress network. Use directory groups to assign "
+"site membership and roles, then remove access when groups change."
+msgstr ""
+"Управляйте доступом в сети WordPress. Назначайте членство на сайтах и роли "
+"по группам каталога, затем удаляйте доступ при изменении групп."
+
+#: src/Commerce.php:134
+msgid "Audit history and CSV export"
+msgstr "История аудита и экспорт CSV"
+
+#: src/Commerce.php:135
+msgid ""
+"See login results, role changes, imports, and access changes in one place. "
+"Set record retention and export the history to CSV."
+msgstr ""
+"Просматривайте результаты входа, изменения ролей, импорт и изменения "
+"доступа в одном месте. Задавайте срок хранения записей и экспортируйте "
+"историю в CSV."
+
+#: src/Commerce.php:141
+msgid "Simple LDAP Login Pro and Enterprise"
+msgstr "Simple LDAP Login Pro и Enterprise"
+
+#: src/Commerce.php:147
+msgid "Keep WordPress access up to date."
+msgstr "Поддерживайте права доступа к WordPress в актуальном состоянии."
+
+#: src/Commerce.php:148
+msgid ""
+"Upgrade to Pro to assign roles and update profiles at login. Upgrade to "
+"Enterprise to remove access when staff leave, before their next login."
+msgstr ""
+"Перейдите на Pro, чтобы назначать роли и обновлять профили при входе. "
+"Перейдите на Enterprise, чтобы закрывать доступ ушедшим сотрудникам до их "
+"следующего входа."
+
+#: src/Commerce.php:144
+msgid "Both plans cover one site. Your existing LDAP settings stay in place."
+msgstr "Оба плана рассчитаны на один сайт. Существующие настройки LDAP сохраняются."
+
+#: src/Commerce.php:148
+msgid "Pro — $99/year"
+msgstr "Pro — $99/год"
+
+#: src/Commerce.php:149
+msgid "Enterprise — $499/year"
+msgstr "Enterprise — $499/год"
+
+#: src/Commerce.php:154
+msgid "All Free features, plus:"
+msgstr "Все функции Free, а также:"
+
+#: src/Commerce.php:154
+msgid "Everything in Pro, plus:"
+msgstr "Всё из Pro, а также:"
+
+#: src/Commerce.php:161
+msgid ""
+"Remove access and end active sessions when hourly directory checks confirm "
+"that access is lost. Keep user content and an audit history."
+msgstr ""
+"Закрывайте доступ и завершайте активные сеансы, когда ежечасные проверки "
+"каталога подтверждают утрату доступа. Сохраняйте содержимое пользователей и "
+"историю аудита."
+
+#: src/Commerce.php:168
+msgid "Buy Pro"
+msgstr "Купить Pro"
+
+#: src/Commerce.php:168
+#: src/Commerce.php:201
+msgid "Get Enterprise"
+msgstr "Получить Enterprise"
+
+#: src/Commerce.php:168
+msgid "Buy Enterprise"
+msgstr "Купить Enterprise"
+
+#: src/Commerce.php:171
+msgid ""
+"Scheduled tasks use WordPress cron and need site traffic or a system task. "
+"Single sign-on requires web server authentication. Multisite rules require "
+"network activation."
+msgstr ""
+"Плановые задачи используют WordPress cron и требуют посещений сайта или "
+"системного задания. Для единого входа нужна аутентификация веб-сервера. "
+"Правила сети сайтов требуют сетевой активации."
+
+#: src/Commerce.php:177
+msgid ""
+"PaidCommunities handles checkout. It receives your IP address, browser "
+"details, and the information you enter at checkout. LDAP credentials and "
+"user records are not sent."
+msgstr ""
+"PaidCommunities обрабатывает оплату. Сервис получает IP-адрес, данные "
+"браузера и сведения, введённые при оплате. Учётные данные LDAP и записи "
+"пользователей не отправляются."
+
+#: pro/src/Admin.php:89
+msgid "License status updated."
+msgstr "Статус лицензии обновлен."
+
+#: pro/src/Admin.php:89
+#: pro/src/License.php:210
+msgid "Could not verify the license. Check your key and connection, then try again."
+msgstr ""
+"Не удалось проверить лицензию. Проверьте свой ключ и соединение, затем "
+"попробуйте снова."
+
+#: src/Commerce.php:111
+msgid "Enter the license key from your purchase receipt."
+msgstr "Введите лицензионный ключ из вашего чека о покупке."
+
+#: src/Commerce.php:190
+msgid "Plan not verified"
+msgstr "План не подтверждён"
+
+#: pro/src/Admin.php:95
+msgid "Expired"
+msgstr "Истекла"
+
+#: pro/src/Admin.php:96
+msgid "Inactive"
+msgstr "Неактивна"
+
+#: pro/src/Admin.php:99
+msgid "License status"
+msgstr "Статус лицензии"
+
+#: pro/src/Admin.php:99
+msgid "Active"
+msgstr "Активна"
+
+#: pro/src/Admin.php:94
+#: pro/src/Admin.php:99
+msgid "Not activated"
+msgstr "Не активирована"
+
+#: src/Commerce.php:197
+msgid "Current plan"
+msgstr "Текущий план"
+
+#: src/Commerce.php:197
+#: src/Commerce.php:209
+msgid "Enterprise"
+msgstr "Enterprise"
+
+#: src/Commerce.php:197
+#: src/Commerce.php:208
+msgid "Pro"
+msgstr "Pro"
+
+#: src/Commerce.php:199
+msgid ""
+"Enterprise adds scheduled account import and access removal, multisite "
+"membership rules, and audit history with CSV export."
+msgstr ""
+"Enterprise добавляет плановый импорт учётных записей и отключение доступа, "
+"правила членства в сети сайтов и историю аудита с экспортом CSV."
+
+#: pro/src/Admin.php:113
+msgid "Check license"
+msgstr "Проверить лицензию"
+
+#: src/Commerce.php:239
+msgid ""
+"PaidCommunities handles licenses. Activation sends your license key, site "
+"domain, plugin version, and server IP address. License checks send site "
+"details. LDAP credentials and user records are not sent."
+msgstr ""
+"PaidCommunities управляет лицензиями. При активации отправляются ключ "
+"лицензии, домен сайта, версия плагина и IP-адрес сервера. Проверки лицензии "
+"отправляют сведения о сайте. Учётные данные LDAP и записи пользователей не "
+"отправляются."
+
+#: pro/src/Admin.php:144
+msgid "Select a license action."
+msgstr "Выберите действие с лицензией."
+
+#: pro/src/Admin.php:107
+msgid "License key"
+msgstr "Лицензионный ключ"
+
+#: pro/src/Admin.php:111
+msgid "Activate license"
+msgstr "Активировать лицензию"
+
+#: pro/src/Admin.php:114
+msgid "Deactivate license"
+msgstr "Деактивировать лицензию"
+
+#: src/Commerce.php:249
+msgid "Activating license…"
+msgstr "Активация лицензии…"
+
+#: src/Commerce.php:250
+msgid "Deactivating license…"
+msgstr "Деактивация лицензии…"
+
+#: src/Commerce.php:251
+msgid "License error"
+msgstr "Ошибка лицензии"
+
+#: src/Commerce.php:252
+msgid "License updated"
+msgstr "Лицензия обновлена"
+
+#: src/Ldap_Client.php:440
+msgid ""
+"LDAP login failed. Check your username and password or contact your site "
+"administrator."
+msgstr ""
+"Вход LDAP не удался. Проверьте свое имя пользователя и пароль или свяжитесь "
+"с администратором сайта."
+
+#: src/Ldap_Client.php:442
+msgid "Your account is not allowed to log in to this site."
+msgstr "Ваша учетная запись не имеет права входа на этот сайт."
+
+#: src/Ldap_Client.php:444
+msgid "LDAP login is unavailable. Contact your site administrator."
+msgstr "Вход через LDAP недоступен. Свяжитесь с администратором сайта."
+
+#: src/Secrets.php:24
+msgid "PHP OpenSSL is required to save the LDAP search password."
+msgstr "PHP OpenSSL необходим для сохранения пароля поиска LDAP."
+
+#: src/Secrets.php:92
+msgid ""
+"Could not read or save the LDAP search password. Enter it again. If this "
+"continues, ask your host to check OpenSSL and the encryption key."
+msgstr ""
+"Не удалось прочитать или сохранить пароль поиска LDAP. Введите его снова. "
+"Если это продолжается, попросите вашего хостинг-провайдера проверить "
+"OpenSSL и ключ шифрования."
+
+#: src/Settings.php:310
+msgid ""
+"Select a recovery account on the Access tab, or turn local recovery access "
+"Off."
+msgstr ""
+"Выберите учетную запись восстановления на вкладке Доступ или отключите "
+"локальный доступ к восстановлению."
+
+#: src/Settings.php:318
+msgid ""
+"Enable Allow unencrypted LDAP on the Advanced tab, or choose StartTLS or "
+"LDAPS."
+msgstr ""
+"Включите Разрешить нешифрованный LDAP на вкладке Дополнительно или выберите "
+"StartTLS или LDAPS."
+
+#: src/Settings.php:341
+msgid "A custom field mapping uses a protected or invalid WordPress user meta key."
+msgstr ""
+"Пользовательское сопоставление полей использует защищенный или "
+"недействительный ключ метаданных пользователя WordPress."
+
+#: src/Settings.php:346
+msgid "Enter a Base DN and at least one LDAP server before enabling LDAP login."
+msgstr ""
+"Введите базовый DN и как минимум один сервер LDAP перед включением входа "
+"через LDAP."
+
+#: src/Settings.php:349
+msgid "WordPress could not save the settings. Try again."
+msgstr "WordPress не смог сохранить настройки. Попробуйте снова."
+
+#: src/Settings.php:604
+msgid "LDAP protocol version"
+msgstr "Версия протокола LDAP"
+
+#: src/Settings.php:605
+msgid "LDAP timeout"
+msgstr "Таймаут LDAP"
+
+#: src/Settings.php:623
+msgid "Check the submitted settings. No changes were saved."
+msgstr "Проверьте отправленные настройки. Изменения не были сохранены."
+
+#: src/Settings.php:626
+#. translators: %s: setting label.
+#, php-format
+msgid "Check %s. No changes were saved."
+msgstr "Проверьте %s. Изменения не были сохранены."
+
+#: src/Commerce.php:181
+msgid ""
+"Install the paid ZIP from your receipt. On the License tab, activate your "
+"key or select Check license. Your LDAP settings stay in place."
+msgstr ""
+"Установите ZIP-архив платной версии из квитанции. На вкладке «Лицензия» "
+"активируйте ключ или выберите «Проверить лицензию». Настройки LDAP "
+"сохранятся."
+
+#: src/Commerce.php:205
+msgid ""
+"Get Enterprise opens checkout for a new license. It does not change or "
+"cancel your Pro subscription. Manage that subscription separately through "
+"PaidCommunities. After purchase, deactivate this key and activate the new "
+"key."
+msgstr ""
+"«Получить Enterprise» открывает оплату новой лицензии. Это не изменяет и не "
+"отменяет подписку Pro. Управляйте этой подпиской отдельно через "
+"PaidCommunities. После покупки деактивируйте этот ключ и активируйте новый "
+"ключ."

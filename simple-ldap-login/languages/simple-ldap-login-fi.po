@@ -1,0 +1,1572 @@
+# Copyright (C) 2026 Clif Griffin Development Inc.
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Simple LDAP Login 2.0.1\n"
+"Report-Msgid-Bugs-To: "
+"https://wordpress.org/support/plugin/simple-ldap-login\n"
+"Last-Translator: gpt-po v1.2.3\n"
+"Language-Team: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-10-30T15:26:17+00:00\n"
+"PO-Revision-Date: 2026-10-30 00:00+0000\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: simple-ldap-login\n"
+"Language: fi\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: Simple-LDAP-Login.php src/Admin.php:64 src/Admin.php:65 src/Admin.php:149
+#. Plugin Name of the plugin
+msgid "Simple LDAP Login"
+msgstr "Simple LDAP Login"
+
+#: Simple-LDAP-Login.php
+#. Plugin URI of the plugin
+msgid "https://github.com/clifgriffin/simple-ldap-login"
+msgstr "https://github.com/clifgriffin/simple-ldap-login"
+
+#: Simple-LDAP-Login.php
+#. Description of the plugin
+msgid "Connect WordPress accounts to Active Directory or OpenLDAP."
+msgstr "Yhdistä WordPress-tilit Active Directoryyn tai OpenLDAP:iin."
+
+#: Simple-LDAP-Login.php
+#. Author of the plugin
+msgid "Clif Griffin Development Inc."
+msgstr "Clif Griffin Development Inc."
+
+#: Simple-LDAP-Login.php
+#. Author URI of the plugin
+msgid "https://clifgriffin.com"
+msgstr "https://clifgriffin.com"
+
+#: pro/src/Accounts.php:205
+msgid "Your directory account is suspended. Contact your site administrator."
+msgstr "Hakemistotilisi on estetty. Ota yhteyttä sivuston ylläpitäjään."
+
+#: pro/src/Accounts.php:249
+msgid "The directory identity has changed. Contact your site administrator."
+msgstr "Hakemistoidentiteetti on muuttunut. Ota yhteyttä sivuston ylläpitäjään."
+
+#: pro/src/Admin.php:49
+msgid "User data"
+msgstr "Käyttäjätiedot"
+
+#: pro/src/Admin.php:50
+#: pro/src/Admin.php:84
+msgid "Single sign-on"
+msgstr "Yksi kirjautuminen"
+
+#: pro/src/Admin.php:59
+msgid "Accounts"
+msgstr "Tilit"
+
+#: pro/src/Admin.php:60
+msgid "Audit"
+msgstr "Tapahtumaloki"
+
+#: pro/src/Admin.php:70
+msgid "Profile updates"
+msgstr "Profiilipäivitykset"
+
+#: pro/src/Admin.php:70
+msgid ""
+"Copy standard LDAP profile fields to existing WordPress accounts at login. "
+"Recovery accounts and super administrators are excluded."
+msgstr ""
+"Kopioi LDAP-hakemiston vakioprofiilikentät olemassa oleville "
+"WordPress-tileille kirjautumisen yhteydessä. Palautustilit ja "
+"superylläpitäjät jätetään pois."
+
+#: pro/src/Admin.php:71
+msgid "Update profiles at login"
+msgstr "Päivitä profiilit kirjautumisen yhteydessä"
+
+#: pro/src/Admin.php:71
+msgid ""
+"Replace names, email, and website with directory values. Empty directory "
+"values clear the field. A missing or invalid email stops the update."
+msgstr ""
+"Korvaa nimet, sähköpostiosoite ja verkkosivusto hakemiston arvoilla. Tyhjät "
+"hakemistoarvot tyhjentävät kentän. Puuttuva tai virheellinen "
+"sähköpostiosoite pysäyttää päivityksen."
+
+#: pro/src/Admin.php:60
+msgid "Custom user fields"
+msgstr "Mukautetut käyttäjäkentät"
+
+#: pro/src/Admin.php:60
+msgid ""
+"Copy LDAP fields, such as phone number or department, to WordPress at "
+"login. Your theme or other plugins can use these values."
+msgstr ""
+"Kopioi LDAP-kentät, kuten puhelinnumero tai osasto, WordPressiin "
+"kirjautumisen yhteydessä. Teemasi tai muut lisäosat voivat käyttää näitä "
+"arvoja."
+
+#: pro/src/Admin.php:61
+#: src/Settings.php:615
+msgid "Field mappings"
+msgstr "Kenttäkartoitukset"
+
+#: pro/src/Admin.php:81
+msgid "LDAP attribute"
+msgstr "LDAP-attribuutti"
+
+#: pro/src/Admin.php:85
+msgid "WordPress meta key"
+msgstr "WordPressin metatietoavain"
+
+#: pro/src/Admin.php:89
+msgid "Type"
+msgstr "Tyyppi"
+
+#: pro/src/Admin.php:91
+msgid "Text"
+msgstr "Teksti"
+
+#: pro/src/Admin.php:92
+msgid "Number"
+msgstr "Numero"
+
+#: pro/src/Admin.php:85
+msgid "Group roles"
+msgstr "Ryhmien roolit"
+
+#: pro/src/Admin.php:85
+msgid ""
+"Set the WordPress role from LDAP groups at each login. The first matching "
+"rule applies. If no rule matches, use the default role. Recovery accounts "
+"and super administrators are excluded."
+msgstr ""
+"Määritä WordPress-rooli LDAP-ryhmien perusteella jokaisella "
+"kirjautumisella. Ensimmäistä vastaavaa sääntöä käytetään. Jos mikään sääntö "
+"ei vastaa, käytetään oletusroolia. Palautustilit ja superylläpitäjät "
+"jätetään pois."
+
+#: pro/src/Admin.php:86
+msgid "Group-to-role rules"
+msgstr "Ryhmien roolisäännöt"
+
+#: pro/src/Admin.php:112
+#: pro/src/Admin.php:155
+msgid "LDAP group"
+msgstr "LDAP-ryhmä"
+
+#: pro/src/Admin.php:116
+#: pro/src/Admin.php:164
+msgid "WordPress role"
+msgstr "WordPress-rooli"
+
+#: pro/src/Admin.php:108
+msgid ""
+"Enterprise includes scheduled account import, scheduled access removal, and "
+"multisite membership rules. Your saved settings are kept."
+msgstr ""
+"Enterprise sisältää ajastetun tilien tuonnin, ajastetun käyttöoikeuksien "
+"poiston ja monisivuston jäsenyyssäännöt. Tallennetut asetukset säilyvät."
+
+#: pro/src/Admin.php:108
+#: pro/src/Audit.php:224
+msgid "View Enterprise upgrade"
+msgstr "Näytä päivitys Enterprise-pakettiin"
+
+#: pro/src/Admin.php:113
+msgid "Enterprise account settings"
+msgstr "Enterprise-tiliasetukset"
+
+#: pro/src/Admin.php:97
+msgid "Multisite membership"
+msgstr "Multisite-jäsenyys"
+
+#: pro/src/Admin.php:97
+msgid ""
+"Assign site membership and roles from directory groups. The first matching "
+"rule for each site applies. These rules replace the group role rules for "
+"network activation."
+msgstr ""
+"Määritä sivustojäsenyydet ja roolit hakemistoryhmien perusteella. Kullekin "
+"sivustolle käytetään ensimmäistä vastaavaa sääntöä. Nämä säännöt korvaavat "
+"ryhmien roolisäännöt verkkoaktivoinnissa."
+
+#: pro/src/Admin.php:98
+msgid "Group-to-site rules"
+msgstr "Ryhmien sivustosäännöt"
+
+#: pro/src/Audit.php:231
+msgid "Site ID"
+msgstr "Sivuston ID"
+
+#: pro/src/Admin.php:101
+msgid "Scheduled account import"
+msgstr "Ajastettu tilien tuonti"
+
+#: pro/src/Admin.php:101
+msgid ""
+"Import directory accounts once per hour through WordPress scheduled tasks. "
+"Set a search account on Connection. Site traffic or a system task must run "
+"WordPress cron."
+msgstr ""
+"Tuo hakemistotilejä kerran tunnissa WordPressin ajastetuilla tehtävillä. "
+"Määritä hakutili Yhteys-välilehdellä. Sivuston liikenteen tai "
+"järjestelmätehtävän on suoritettava WordPressin cron."
+
+#: pro/src/Admin.php:102
+msgid "Enable scheduled import"
+msgstr "Ota ajastettu tuonti käyttöön"
+
+#: pro/src/Admin.php:102
+msgid ""
+"Create accounts without a first login. Existing local accounts are "
+"excluded. No user session is created."
+msgstr ""
+"Luo tilejä ilman ensimmäistä kirjautumista. Olemassa olevat paikalliset "
+"tilit jätetään pois. Käyttäjäistuntoa ei luoda."
+
+#: pro/src/Admin.php:103
+msgid "Import Base DN"
+msgstr "Tuonnin perus-DN"
+
+#: pro/src/Admin.php:103
+msgid "Leave blank to use the connection Base DN."
+msgstr "Jätä tyhjäksi, jos haluat käyttää yhteyden perus-DN:ää."
+
+#: pro/src/Admin.php:104
+msgid "Import groups"
+msgstr "Tuotavat ryhmät"
+
+#: pro/src/Admin.php:104
+msgid ""
+"One group per line. Import users in at least one group. Leave blank to "
+"import all users below the Import Base DN. Login group restrictions also "
+"apply."
+msgstr ""
+"Yksi ryhmä riville. Tuo käyttäjät, jotka kuuluvat vähintään yhteen "
+"ryhmistä. Jätä tyhjäksi, jos haluat tuoda kaikki tuonnin perus-DN:n alaiset "
+"käyttäjät. Myös kirjautumisen ryhmärajoitukset ovat voimassa."
+
+#: pro/src/Admin.php:106
+msgid "Scheduled access removal"
+msgstr "Ajastettu käyttöoikeuksien poisto"
+
+#: pro/src/Admin.php:106
+msgid ""
+"Check managed directory accounts once per hour. A confirmed missing "
+"account, disabled AD account, changed directory identity, or failed login "
+"group rule suspends access and ends all WordPress sessions. Connection "
+"errors keep the current access state."
+msgstr ""
+"Tarkista hallitut hakemistotilit kerran tunnissa. Vahvistettu puuttuva "
+"tili, käytöstä poistettu AD-tili, muuttunut hakemistoidentiteetti tai "
+"kirjautumisryhmän säännön hylkäys estää käytön ja päättää kaikki "
+"WordPress-istunnot. Yhteysvirheet säilyttävät nykyisen käyttöoikeustilan."
+
+#: pro/src/Admin.php:107
+msgid "Enable scheduled access removal"
+msgstr "Ota ajastettu käyttöoikeuksien poisto käyttöön"
+
+#: pro/src/Admin.php:107
+msgid ""
+"Keep user data and content. Restore access after a later successful "
+"directory check. Recovery accounts and super administrators are excluded. "
+"Existing suspensions remain if the task or license stops."
+msgstr ""
+"Säilytä käyttäjätiedot ja sisältö. Palauta käyttöoikeus myöhemmän "
+"onnistuneen hakemistotarkistuksen jälkeen. Palautustilit ja "
+"superylläpitäjät jätetään pois. Olemassa olevat estot säilyvät, jos tehtävä "
+"pysähtyy tai lisenssi ei ole enää aktiivinen."
+
+#: pro/src/Admin.php:207
+msgid "Add row"
+msgstr "Lisää rivi"
+
+#: pro/src/Admin.php:262
+msgid "Remove row"
+msgstr "Poista rivi"
+
+#: pro/src/Admin.php:71
+msgid "Custom field storage"
+msgstr "Mukautetun kentän tallennus"
+
+#: pro/src/Admin.php:71
+msgid "Leave the defaults unless your integration uses different user meta keys."
+msgstr "Jätä oletukset, ellei integraatiosi käytä erilaisia käyttäjämeta-avain."
+
+#: pro/src/Admin.php:72
+#: src/Settings.php:616
+msgid "LDAP value suffix"
+msgstr "LDAP-arvon suffiksi"
+
+#: pro/src/Admin.php:72
+msgid "Stores the LDAP value, such as phone_ldap."
+msgstr "Tallentaa LDAP-arvon, kuten phone_ldap."
+
+#: pro/src/Admin.php:73
+#: src/Settings.php:617
+msgid "WordPress value suffix"
+msgstr "WordPress-arvon suffiksi"
+
+#: pro/src/Admin.php:73
+msgid "Stores the editable WordPress value, such as phone_wp."
+msgstr "Tallentaa muokattavan WordPress-arvon, kuten phone_wp."
+
+#: pro/src/Admin.php:83
+msgid "Single sign-on (SSO)"
+msgstr "Yksi kirjautuminen (SSO)"
+
+#: pro/src/Admin.php:84
+msgid "Sign users in to WordPress after your web server authenticates them."
+msgstr ""
+"Kirjaa käyttäjät WordPressiin sen jälkeen, kun verkkopalvelimesi on "
+"todennut heidät."
+
+#: pro/src/Admin.php:85
+msgid "Enable single sign-on"
+msgstr "Ota käyttöön kertakirjautuminen"
+
+#: pro/src/Admin.php:85
+msgid "Users do not need a second login for WordPress."
+msgstr "Käyttäjien ei tarvitse toista kirjautumista WordPressiin."
+
+#: pro/src/Admin.php:87
+msgid ""
+"Configure your web server to authenticate users and set REMOTE_USER. Enter "
+"an LDAP search account on Connection."
+msgstr ""
+"Määritä verkkopalvelimesi todennamaan käyttäjät ja asettamaan REMOTE_USER. "
+"Syötä LDAP-haku tili Yhteys-välilehdelle."
+
+#: pro/src/Admin.php:88
+msgid ""
+"Do not copy browser headers into REMOTE_USER. Block access that bypasses "
+"web server authentication."
+msgstr ""
+"Älä kopioi selaimen otsikoita REMOTE_USER:iin. Estä pääsy, joka kiertää "
+"verkkopalvelimen todennuksen."
+
+#: pro/src/Admin.php:87
+msgid "Web server authentication"
+msgstr "Web-palvelimen autentikointi"
+
+#: pro/src/Admin.php:88
+msgid "REMOTE_USER is present."
+msgstr "REMOTE_USER on läsnä."
+
+#: pro/src/Admin.php:88
+msgid "REMOTE_USER is missing. Check the web server configuration."
+msgstr "REMOTE_USER puuttuu. Tarkista web-palvelimen asetukset."
+
+#: pro/src/Audit.php:224
+msgid ""
+"An Enterprise license is required to collect, read, or export audit "
+"history. Existing records are kept."
+msgstr ""
+"Tapahtumahistorian keräämiseen, lukemiseen tai vientiin tarvitaan "
+"Enterprise-lisenssi. Nykyiset tietueet säilyvät."
+
+#: pro/src/Audit.php:229
+msgid "Enterprise audit settings"
+msgstr "Enterprise-tapahtumalokin asetukset"
+
+#: pro/src/Audit.php:211
+msgid "Audit history"
+msgstr "Tapahtumahistoria"
+
+#: pro/src/Audit.php:211
+msgid ""
+"Record login results and account changes. Records contain event names and "
+"account IDs. Passwords, directory field values, and credentials are "
+"excluded."
+msgstr ""
+"Tallenna kirjautumistulokset ja tilimuutokset. Tietueet sisältävät "
+"tapahtumien nimet ja tilien tunnukset. Salasanoja, hakemistokenttien arvoja "
+"ja tunnistetietoja ei tallenneta."
+
+#: pro/src/Audit.php:212
+msgid "Enable audit history"
+msgstr "Ota tapahtumahistoria käyttöön"
+
+#: pro/src/Audit.php:212
+msgid ""
+"Store private WordPress records. Collection is off by default. Existing "
+"records remain when collection stops."
+msgstr ""
+"Tallenna yksityisiä WordPress-tietueita. Keruu on oletusarvoisesti poissa "
+"käytöstä. Olemassa olevat tietueet säilyvät keruun loputtua."
+
+#: pro/src/Audit.php:213
+msgid "Retention (days)"
+msgstr "Säilytysaika (päivää)"
+
+#: pro/src/Audit.php:213
+msgid ""
+"Default: 30. Range: 1 to 3650. A daily task removes older records while "
+"collection is enabled."
+msgstr ""
+"Oletus: 30. Alue: 1–3650. Päivittäinen tehtävä poistaa vanhemmat tietueet "
+"keruun ollessa käytössä."
+
+#: pro/src/Audit.php:229
+msgid "Export CSV"
+msgstr "Vie CSV"
+
+#: pro/src/Audit.php:230
+msgid ""
+"Latest 50 records. The export includes all retained records in this scope. "
+"Times use UTC."
+msgstr ""
+"Viimeiset 50 tietuetta. Vienti sisältää kaikki tämän laajuuden säilytetyt "
+"tietueet. Ajat ovat UTC-aikaa."
+
+#: pro/src/Audit.php:231
+msgid "Time (UTC)"
+msgstr "Aika (UTC)"
+
+#: pro/src/Audit.php:231
+msgid "Event"
+msgstr "Tapahtuma"
+
+#: pro/src/Audit.php:231
+msgid "Actor ID"
+msgstr "Toimijan ID"
+
+#: pro/src/Audit.php:231
+msgid "User ID"
+msgstr "Käyttäjän ID"
+
+#: pro/src/Audit.php:253
+msgid "You do not have permission to export these records."
+msgstr "Sinulla ei ole oikeutta viedä näitä tietueita."
+
+#: src/Admin.php:90
+msgid "You do not have permission to change these settings."
+msgstr "Sinulla ei ole oikeuksia muuttaa näitä asetuksia."
+
+#: pro/src/Settings_Rules.php:53
+msgid ""
+"Activate an Enterprise license to change these settings. Your saved "
+"settings are kept."
+msgstr ""
+"Aktivoi Enterprise-lisenssi, jos haluat muuttaa näitä asetuksia. "
+"Tallennetut asetukset säilyvät."
+
+#: pro/src/Settings_Rules.php:130
+msgid "A Pro setting is not valid. Check the format and role names."
+msgstr "Pro-asetus ei ole kelvollinen. Tarkista muoto ja roolien nimet."
+
+#: pro/src/Upgrade_Guard.php:84
+msgid ""
+"The update was stopped. Activate Simple LDAP Login Pro to restore LDAP "
+"login."
+msgstr ""
+"Päivitys keskeytettiin. Aktivoi Simple LDAP Login Pro palauttaaksesi "
+"LDAP-kirjautumisen."
+
+#: pro/src/Upgrade_Guard.php:86
+msgid ""
+"Update blocked: This package does not include all Pro files. To install "
+"Free, deactivate the plugin first. Your installed files and settings are "
+"unchanged."
+msgstr ""
+"Päivitys estetty: Tämä paketti ei sisällä kaikkia Pro-tiedostoja. "
+"Asentaaksesi Free, deaktivoi ensin lisäosa. Asennetut tiedostosi ja "
+"asetuksesi pysyvät muuttumattomina."
+
+#: pro/src/Upgrade_Guard.php:113
+msgid "WordPress could not reactivate the plugin."
+msgstr "WordPress ei voinut aktivoida laajennusta uudelleen."
+
+#: Simple-LDAP-Login.php:29
+msgid "Simple LDAP Login needs PHP 8.1 or later."
+msgstr "Simple LDAP Login tarvitsee PHP 8.1 tai uudemman."
+
+#: Simple-LDAP-Login.php:39
+msgid "Plugin files are missing. Reinstall Simple LDAP Login from the release ZIP."
+msgstr ""
+"Laajennustiedostot puuttuvat. Asenna Simple LDAP Login uudelleen julkaisun "
+"ZIP-tiedostosta."
+
+#: src/Admin.php:97
+msgid "The settings scope has changed. Open the settings page and try again."
+msgstr "Asetusten laajuus on muuttunut. Avaa asetussivu ja yritä uudelleen."
+
+#: src/Admin.php:141
+msgid "You do not have permission to view these settings."
+msgstr "Sinulla ei ole oikeuksia nähdä näitä asetuksia."
+
+#: src/Admin.php:160
+msgid "LDAP login and SSO are disabled by SLL_DISABLE_LDAP in wp-config.php."
+msgstr ""
+"LDAP-kirjautuminen ja SSO on poistettu käytöstä SLL_DISABLE_LDAP:n vuoksi "
+"wp-config.php:ssa."
+
+#: src/Admin.php:164
+msgid ""
+"Your saved settings use backup LDAP servers, SSO, or custom user fields. "
+"Install Simple LDAP Login Pro to use these features. Your settings are kept."
+msgstr ""
+"Tallennetut asetuksesi käyttävät LDAP-varapalvelimia, SSO:ta tai "
+"mukautettuja käyttäjäkenttiä. Asenna Simple LDAP Login Pro, jos haluat "
+"käyttää näitä ominaisuuksia. Asetuksesi säilytetään."
+
+#: src/Admin.php:169
+msgid ""
+"The saved LDAP search password cannot be read. Enter it again on the "
+"Connection tab."
+msgstr ""
+"Tallennettua LDAP-hakusalasanaa ei voida lukea. Syötä se uudelleen "
+"Yhteys-välilehdellä."
+
+#: src/Admin.php:172
+msgid "PHP LDAP is missing. Ask your host to install it before enabling LDAP login."
+msgstr ""
+"PHP LDAP puuttuu. Pyydä isäntääsi asentamaan se ennen LDAP-kirjautumisen "
+"käyttöönottoa."
+
+#: src/Admin.php:175
+msgid ""
+"LDAP passwords are sent without encryption. Use StartTLS or LDAPS if your "
+"server supports it."
+msgstr ""
+"LDAP-salasanat lähetetään ilman salausta. Käytä StartTLS:ää tai LDAPS:ää, "
+"jos palvelimesi tukee sitä."
+
+#: src/Admin.php:154
+#: src/Admin.php:177
+msgid "LDAP login settings"
+msgstr "LDAP-kirjautumisen asetukset"
+
+#: src/Admin.php:207
+msgid "Save settings"
+msgstr "Tallenna asetukset"
+
+#: src/Admin.php:208
+msgid "Settings on other tabs are kept."
+msgstr "Muiden välilehtien asetukset säilytetään."
+
+#: src/Admin.php:223
+msgid "LDAP connection"
+msgstr "LDAP-yhteys"
+
+#: src/Admin.php:224
+msgid "LDAP login"
+msgstr "LDAP-kirjautuminen"
+
+#: src/Admin.php:224
+msgid "Enable LDAP authentication."
+msgstr "Ota LDAP-todennus käyttöön."
+
+#: src/Admin.php:227
+#: src/Settings.php:597
+msgid "Directory type"
+msgstr "Hakemistotyyppi"
+
+#: src/Admin.php:229
+msgid "Active Directory"
+msgstr "Active Directory"
+
+#: src/Admin.php:230
+msgid "OpenLDAP / other LDAP directory"
+msgstr "OpenLDAP / muu LDAP-hakemisto"
+
+#: src/Admin.php:233
+#: src/Settings.php:599
+msgid "LDAP servers"
+msgstr "LDAP-palvelimet"
+
+#: src/Admin.php:242
+msgid ""
+"One hostname or IP address per line. An active Pro or Enterprise license "
+"enables backup servers. Without an active license, only the first server is "
+"used."
+msgstr ""
+"Yksi palvelinnimi tai IP-osoite riviä kohden. Aktiivinen Pro- tai "
+"Enterprise-lisenssi mahdollistaa varapalvelinten käytön. Ilman aktiivista "
+"lisenssiä käytetään vain ensimmäistä palvelinta."
+
+#: src/Admin.php:225
+msgid ""
+"Upgrade to Pro to use backup LDAP servers when your primary server is "
+"unavailable."
+msgstr ""
+"Päivitä Prohon, jotta voit käyttää LDAP-varapalvelimia, kun ensisijainen "
+"palvelimesi ei ole käytettävissä."
+
+#: src/Admin.php:234
+#: src/Settings.php:600
+msgid "Base DN"
+msgstr "Perus DN"
+
+#: src/Admin.php:234
+msgid "Where to search for users. Example: DC=example,DC=org."
+msgstr "Missä etsitään käyttäjiä. Esimerkki: DC=example,DC=org."
+
+#: src/Admin.php:235
+#: src/Settings.php:601
+msgid "Username suffix"
+msgstr "Käyttäjänimen liite"
+
+#: src/Admin.php:235
+msgid "Added to usernames without a domain. Example: @example.org."
+msgstr "Lisätään käyttäjänimiin ilman verkkotunnusta. Esimerkki: @example.org."
+
+#: src/Admin.php:236
+#: src/Settings.php:602
+msgid "Windows domain"
+msgstr "Windows-verkkotunnus"
+
+#: src/Admin.php:236
+msgid "Short domain name, such as EXAMPLE. Takes priority over the username suffix."
+msgstr "Lyhyt verkkotunnus, kuten EXAMPLE. On etusijalla käyttäjänimen liitteen yli."
+
+#: src/Admin.php:238
+#: src/Admin.php:241
+#: src/Settings.php:598
+msgid "Connection security"
+msgstr "Yhteyden turvallisuus"
+
+#: src/Admin.php:238
+msgid "TLS requires a trusted server certificate."
+msgstr "TLS vaatii luotettavan palvelintodistuksen."
+
+#: src/Admin.php:243
+msgid "StartTLS (recommended)"
+msgstr "StartTLS (suositeltava)"
+
+#: src/Admin.php:244
+msgid "LDAPS"
+msgstr "LDAPS"
+
+#: src/Admin.php:245
+msgid "Unencrypted LDAP"
+msgstr "Salaamaton LDAP"
+
+#: src/Admin.php:247
+msgid "Unencrypted LDAP requires permission on the Advanced tab."
+msgstr "Salaamaton LDAP vaatii oikeudet Lisäasetukset-välilehdellä."
+
+#: src/Admin.php:249
+#: src/Settings.php:603
+msgid "Port"
+msgstr "Portti"
+
+#: src/Admin.php:249
+msgid "389 for StartTLS; 636 for LDAPS."
+msgstr "389 StartTLS:lle; 636 LDAPS:lle."
+
+#: src/Admin.php:250
+msgid "Search subfolders"
+msgstr "Etsi alikansioita"
+
+#: src/Admin.php:250
+msgid "Search all organizational units below the Base DN."
+msgstr "Etsi kaikki organisaatioyksiköt Perus DN:n alapuolelta."
+
+#: src/Admin.php:252
+msgid "LDAP search account"
+msgstr "LDAP-hakutili"
+
+#: src/Admin.php:252
+msgid "An LDAP account with read access to users and groups."
+msgstr "LDAP-tili, jolla on lukuoikeus käyttäjiin ja ryhmiin."
+
+#: src/Admin.php:253
+msgid "Search account"
+msgstr "Hakutili"
+
+#: src/Admin.php:253
+msgid "LDAP bind DN or account name."
+msgstr "LDAP-sitoutumisen DN tai tilin nimi."
+
+#: src/Admin.php:254
+#: src/Settings.php:614
+msgid "Search account password"
+msgstr "Hakutilin salasana"
+
+#: src/Admin.php:254
+msgid "Leave blank to keep the saved password."
+msgstr "Jätä tyhjäksi, jotta tallennettu salasana säilyy."
+
+#: src/Admin.php:262
+msgid "Login rules"
+msgstr "Kirjautumissäännöt"
+
+#: src/Admin.php:263
+msgid "Require LDAP passwords"
+msgstr "Vaadi LDAP-salasanat"
+
+#: src/Admin.php:263
+msgid "Block WordPress passwords except for recovery access."
+msgstr "Estä WordPress-salasanat, paitsi palautuskäyttöön."
+
+#: src/Admin.php:266
+#: src/Settings.php:612
+msgid "Local recovery access"
+msgstr "Paikallinen palautuskäyttö"
+
+#: src/Admin.php:268
+msgid "Selected administrators"
+msgstr "Valitut ylläpitäjät"
+
+#: src/Admin.php:269
+msgid "All super administrators (legacy)"
+msgstr "Kaikki superylläpitäjät (legacy)"
+
+#: src/Admin.php:269
+msgid "All administrators (legacy)"
+msgstr "Kaikki ylläpitäjät (legacy)"
+
+#: src/Admin.php:270
+msgid "Off"
+msgstr "Pois päältä"
+
+#: src/Admin.php:272
+msgid "Choose who can use a WordPress password when LDAP passwords are required."
+msgstr ""
+"Valitse, kuka voi käyttää WordPress-salasanaa, kun LDAP-salasanat ovat "
+"pakollisia."
+
+#: src/Admin.php:275
+msgid "Automatic account creation"
+msgstr "Automaattinen tilin luonti"
+
+#: src/Admin.php:275
+msgid "Create a WordPress account on the first successful LDAP login."
+msgstr "Luo WordPress-tili ensimmäisellä onnistuneella LDAP-kirjautumisella."
+
+#: src/Admin.php:280
+#: src/Settings.php:611
+msgid "Default role"
+msgstr "Oletusrooli"
+
+#: src/Admin.php:280
+msgid "For new accounts only."
+msgstr "Vain uusille tileille."
+
+#: src/Admin.php:273
+msgid ""
+"Upgrade to Pro to assign WordPress roles from directory groups at each "
+"login."
+msgstr ""
+"Päivitä Prohon, jotta voit määrittää WordPress-roolit hakemistoryhmien "
+"perusteella jokaisella kirjautumiskerralla."
+
+#: src/Admin.php:281
+#: src/Settings.php:609
+msgid "Required groups"
+msgstr "Vaaditut ryhmät"
+
+#: src/Admin.php:281
+msgid ""
+"One group name per line. Users must belong to at least one. Leave blank to "
+"allow all LDAP users."
+msgstr ""
+"Yksi ryhmän nimi per rivi. Käyttäjien on kuuluttava vähintään yhteen. Jätä "
+"tyhjäksi, jotta kaikki LDAP-käyttäjät saavat käyttöoikeuden."
+
+#: src/Admin.php:275
+msgid ""
+"Upgrade to Enterprise to remove access when staff leave, with hourly "
+"directory checks."
+msgstr ""
+"Päivitä Enterpriseen, jotta voit poistaa käyttöoikeudet työntekijöiden "
+"lähtiessä tunnin välein tehtävien hakemistotarkistusten avulla."
+
+#: src/Admin.php:295
+#: src/Settings.php:613
+msgid "Recovery accounts"
+msgstr "Palautustilit"
+
+#: src/Admin.php:305
+msgid ""
+"For Selected administrators only. Use separate local accounts with "
+"WordPress passwords. Hold Ctrl or Command to select multiple accounts."
+msgstr ""
+"Vain valituille ylläpitäjille. Käytä erillisiä paikallisia tilejä "
+"WordPress-salasanoilla. Pidä Ctrl tai Command painettuna valitaksesi useita "
+"tilejä."
+
+#: src/Admin.php:320
+msgid "Connection options"
+msgstr "Yhteysasetukset"
+
+#: src/Admin.php:320
+msgid "Change these only if the default values do not work with your directory."
+msgstr "Muuta näitä vain, jos oletusarvot eivät toimi hakemistosi kanssa."
+
+#: src/Admin.php:321
+msgid "LDAP timeout (seconds)"
+msgstr "LDAP-aika (sekunteina)"
+
+#: src/Admin.php:321
+msgid "Maximum wait for an LDAP operation. Default: 5 seconds."
+msgstr "Maksimiviive LDAP-toiminnolle. Oletusarvo: 5 sekuntia."
+
+#: src/Admin.php:322
+#: src/Settings.php:606
+msgid "Login attribute"
+msgstr "Kirjautumisattribuutti"
+
+#: src/Admin.php:322
+msgid "Attribute used to find users. Default: uid."
+msgstr "Attribuutti, jota käytetään käyttäjien löytämiseen. Oletusarvo: uid."
+
+#: src/Admin.php:323
+msgid "Allow unencrypted LDAP"
+msgstr "Salli salaamaton LDAP"
+
+#: src/Admin.php:323
+msgid "Allow passwords to be sent without encryption."
+msgstr "Salli salasanojen lähettäminen ilman salausta."
+
+#: src/Admin.php:325
+msgid "Group search"
+msgstr "Ryhmähaku"
+
+#: src/Admin.php:326
+#: src/Settings.php:610
+msgid "Group base DN"
+msgstr "Ryhmän perus DN"
+
+#: src/Admin.php:326
+msgid "Leave blank to use the user Base DN."
+msgstr "Jätä tyhjäksi käyttäjän perus DN:n käyttämiseksi."
+
+#: src/Admin.php:327
+#: src/Settings.php:607
+msgid "Group name attribute"
+msgstr "Ryhmän nimen attribuutti"
+
+#: src/Admin.php:327
+msgid "Default: cn."
+msgstr "Oletus: cn."
+
+#: src/Admin.php:328
+#: src/Settings.php:608
+msgid "Group member attribute"
+msgstr "Ryhmän jäsenattribuutti"
+
+#: src/Admin.php:328
+msgid "Default: memberUid. Use member or uniqueMember if groups store user DNs."
+msgstr ""
+"Oletus: memberUid. Käytä member tai uniqueMember, jos ryhmät tallentavat "
+"käyttäjän DNs."
+
+#: src/Admin.php:330
+msgid "Profile attributes"
+msgstr "Profiiliattribuutit"
+
+#: src/Admin.php:330
+msgid "LDAP attributes copied to new WordPress accounts."
+msgstr "LDAP-attribuutit, jotka kopioidaan uusiin WordPress-tileihin."
+
+#: src/Admin.php:331
+#: src/Settings.php:618
+msgid "First name attribute"
+msgstr "Etunimiattribuutti"
+
+#: src/Admin.php:332
+#: src/Settings.php:619
+msgid "Last name attribute"
+msgstr "Sukunimiattribuutti"
+
+#: src/Admin.php:333
+#: src/Settings.php:620
+msgid "Email attribute"
+msgstr "Sähköpostiattribuutti"
+
+#: src/Admin.php:334
+#: src/Settings.php:621
+msgid "Website attribute"
+msgstr "Verkkosivuston attribuutti"
+
+#: src/Admin.php:340
+msgid ""
+"Upgrade to Pro to update profiles at login and copy custom fields from your "
+"directory."
+msgstr ""
+"Päivitä Prohon, jotta voit päivittää profiilit kirjautumisen yhteydessä ja "
+"kopioida mukautetut kentät hakemistostasi."
+
+#: src/Admin.php:337
+msgid "Data retention"
+msgstr "Tietojen säilytys"
+
+#: src/Admin.php:338
+msgid "Delete settings when removing the plugin"
+msgstr "Poista asetukset, kun poistat lisäosan"
+
+#: src/Admin.php:338
+msgid ""
+"Delete saved settings and LDAP credentials when WordPress deletes the "
+"plugin. Keep user accounts."
+msgstr ""
+"Poista tallennetut asetukset ja LDAP-todistukset, kun WordPress poistaa "
+"lisäosan. Pidä käyttäjätilit."
+
+#: src/Admin.php:351
+msgid "We can help."
+msgstr "Voimme auttaa."
+
+#: src/Admin.php:352
+msgid ""
+"Get help with setup, login, or licensing. Send us a message and we will "
+"reply by email."
+msgstr ""
+"Saat apua määrityksiin, kirjautumiseen ja lisensseihin. Lähetä meille "
+"viesti, niin vastaamme sähköpostitse."
+
+#: src/Admin.php:354
+msgid "Contact Support"
+msgstr "Ota yhteyttä tukeen"
+
+#: src/Admin.php:355
+msgid "View Documentation"
+msgstr "Avaa dokumentaatio"
+
+#: src/Admin.php:361
+msgid "Common questions"
+msgstr "Yleiset kysymykset"
+
+#: src/Admin.php:365
+msgid "Installation and setup"
+msgstr "Asennus ja määritys"
+
+#: src/Admin.php:365
+msgid "Connect your directory and test your first login."
+msgstr "Yhdistä hakemistosi ja testaa ensimmäinen kirjautuminen."
+
+#: src/Admin.php:366
+msgid "Connection and login tests"
+msgstr "Yhteys- ja kirjautumistestit"
+
+#: src/Admin.php:366
+msgid "Check the connection and find the cause of login errors."
+msgstr "Tarkista yhteys ja selvitä kirjautumisvirheiden syy."
+
+#: src/Admin.php:367
+msgid "Administrator recovery"
+msgstr "Ylläpitäjän pääsyn palautus"
+
+#: src/Admin.php:367
+msgid "Restore access if LDAP login stops working."
+msgstr "Palauta pääsy, jos LDAP-kirjautuminen lakkaa toimimasta."
+
+#: src/Admin.php:368
+msgid "Pro and Enterprise licensing"
+msgstr "Pro- ja Enterprise-lisenssit"
+
+#: src/Admin.php:368
+msgid "Activate a license, check your plan, or renew."
+msgstr "Aktivoi lisenssi, tarkista tilauksesi tai uusi se."
+
+#: src/Admin.php:350
+msgid "Recovery"
+msgstr "Palautus"
+
+#: src/Admin.php:385
+msgid "In wp-config.php, add this line before the line that loads wp-settings.php:"
+msgstr ""
+"Lisää wp-config.php-tiedostoon tämä rivi ennen riviä, joka lataa "
+"wp-settings.php-tiedoston:"
+
+#: src/Admin.php:387
+msgid ""
+"This disables LDAP login and SSO. Log in with a local WordPress "
+"administrator password, correct the settings, then remove this line."
+msgstr ""
+"Tämä poistaa LDAP-kirjautumisen ja SSO:n käytöstä. Kirjaudu paikallisen "
+"WordPress-ylläpitäjän salasanalla, korjaa asetukset ja poista sitten tämä "
+"rivi."
+
+#: src/Admin.php:388
+msgid "Alternative: rename the plugin folder"
+msgstr "Vaihtoehto: nimeä lisäosan kansio uudelleen"
+
+#: src/Admin.php:389
+#. translators: %s: Installed plugin directory, shown as an inline path.
+#, php-format
+msgid ""
+"If you are locked out, rename the %s folder on your WordPress server. Log "
+"in with a WordPress administrator password, then restore the folder and "
+"correct the settings."
+msgstr ""
+"Jos et pääse kirjautumaan, nimeä WordPress-palvelimella oleva kansio %s "
+"uudelleen. Kirjaudu WordPress-ylläpitäjän salasanalla, palauta sitten "
+"kansion nimi ja korjaa asetukset."
+
+#: src/Admin.php:384
+msgid ""
+"For certificate errors, check that the LDAP server certificate has not "
+"expired and matches the server name in Connection settings."
+msgstr ""
+"Jos ilmenee varmennevirheitä, tarkista, ettei LDAP-palvelimen varmenne ole "
+"vanhentunut ja että se vastaa yhteysasetusten palvelinnimeä."
+
+#: src/Admin.php:385
+msgid ""
+"On the WordPress server, add your root and intermediate CA certificates to "
+"the trust configuration used by PHP's LDAP library. For OpenLDAP, use "
+"TLS_CACERT in ldap.conf. Restart PHP after changes, then save Connection "
+"settings to test again."
+msgstr ""
+"Lisää WordPress-palvelimella juuri- ja välivarmentajien varmenteet PHP:n "
+"LDAP-kirjaston käyttämään luottamusmääritykseen. Käytä OpenLDAPissa "
+"TLS_CACERT-asetusta ldap.conf-tiedostossa. Käynnistä PHP muutosten jälkeen "
+"uudelleen ja tallenna yhteysasetukset uutta testiä varten."
+
+#: src/Admin.php:366
+msgid "LDAP tests"
+msgstr "LDAP-testit"
+
+#: src/Admin.php:367
+msgid "Tests use saved settings."
+msgstr "Testit käyttävät tallennettuja asetuksia."
+
+#: src/Admin.php:346
+msgid ""
+"Save your settings, then run both tests. Keep this administrator session "
+"open."
+msgstr ""
+"Tallenna asetuksesi ja suorita sitten molemmat testit. Pidä tämä "
+"ylläpitäjäistunto auki."
+
+#: src/Admin.php:348
+msgid ""
+"Tests check the connection, password, and required groups. They do not "
+"create accounts or sign users in."
+msgstr ""
+"Testit tarkistavat yhteyden, salasanan ja vaaditut ryhmät. Ne eivät luo "
+"tilejä tai kirjaudu käyttäjiä sisään."
+
+#: src/Admin.php:219
+#: src/Admin.php:391
+#: src/Admin.php:393
+msgid "Check Connection"
+msgstr "Tarkista yhteys"
+
+#: src/Admin.php:373
+msgid "Connect to LDAP and test the search account, if set."
+msgstr "Yhdistä LDAP:hen ja testaa hakutili, jos se on asetettu."
+
+#: src/Admin.php:346
+#: src/Admin.php:382
+msgid "Test LDAP login"
+msgstr "Testaa LDAP-kirjautuminen"
+
+#: src/Admin.php:379
+msgid "Check an LDAP username, password, and group membership."
+msgstr "Tarkista LDAP-käyttäjänimi, salasana ja ryhmän jäsenyys."
+
+#: src/Admin.php:380
+msgid "LDAP username"
+msgstr "LDAP-käyttäjänimi"
+
+#: src/Admin.php:381
+msgid "LDAP password"
+msgstr "LDAP-salasana"
+
+#: src/Admin.php:349
+msgid "After both tests pass, enable LDAP and try logging in from another browser."
+msgstr ""
+"Kun molemmat testit onnistuvat, ota LDAP käyttöön ja yritä kirjautua sisään "
+"toisesta selaimesta."
+
+#: src/Admin.php:456
+msgid "Upgrade Now"
+msgstr "Päivitä nyt"
+
+#: src/Admin.php:537
+msgid "Settings saved."
+msgstr "Asetukset tallennettu."
+
+#: src/Admin.php:538
+msgid "Connection test passed."
+msgstr "Yhteystesti onnistui."
+
+#: src/Admin.php:539
+msgid ""
+"Cannot connect to LDAP. Check the server, port, TLS certificate, and search "
+"account."
+msgstr ""
+"Ei voitu yhdistää LDAP:hen. Tarkista palvelin, portti, TLS-todistus ja "
+"hakutili."
+
+#: src/Admin.php:540
+msgid "LDAP login test passed. No account was created."
+msgstr "LDAP-kirjautumistesti onnistui. Tiliä ei luotu."
+
+#: src/Admin.php:541
+msgid "LDAP login test failed. Check the username, password, and required groups."
+msgstr ""
+"LDAP-kirjautumistesti epäonnistui. Tarkista käyttäjänimi, salasana ja "
+"vaaditut ryhmät."
+
+#: src/Admin.php:542
+msgid "Could not save settings. Check the values and try again."
+msgstr "Asetuksia ei voitu tallentaa. Tarkista arvot ja yritä uudelleen."
+
+#: src/Admin.php:586
+msgid "Connection"
+msgstr "Yhteys"
+
+#: src/Admin.php:587
+msgid "Access"
+msgstr "Pääsy"
+
+#: src/Admin.php:588
+msgid "Advanced"
+msgstr "Lisäasetukset"
+
+#: src/Admin.php:641
+msgid "Testing"
+msgstr "Testaus"
+
+#: src/Admin.php:642
+msgid "Support"
+msgstr "Tuki"
+
+#: src/Authenticator.php:151
+msgid ""
+"Your LDAP login is valid, but you need a WordPress account. Contact your "
+"site administrator."
+msgstr ""
+"LDAP-kirjautumisesi on voimassa, mutta tarvitset WordPress-tilin. Ota "
+"yhteyttä sivustosi ylläpitäjään."
+
+#: src/Authenticator.php:154
+msgid ""
+"Your LDAP username is not a valid WordPress username. Contact your site "
+"administrator."
+msgstr ""
+"LDAP-käyttäjänimesi ei ole voimassa oleva WordPress-käyttäjänimi. Ota "
+"yhteyttä sivustosi ylläpitäjään."
+
+#: src/Authenticator.php:158
+msgid ""
+"The default WordPress role is not available. Contact your site "
+"administrator."
+msgstr ""
+"Oletus WordPress-rooli ei ole saatavilla. Ota yhteyttä sivustosi "
+"ylläpitäjään."
+
+#: src/Authenticator.php:175
+msgid "Could not create your WordPress account. Contact your site administrator."
+msgstr "WordPress-tiliäsi ei voitu luoda. Ota yhteyttä sivustosi ylläpitäjään."
+
+#: src/Authenticator.php:180
+msgid "Use your WordPress password for this recovery account."
+msgstr "Käytä WordPress-salasanaasi tätä palautustiliä varten."
+
+#: pro/src/Admin.php:54
+msgid "License"
+msgstr "Lisenssi"
+
+#: src/Commerce.php:58
+msgid "Go Pro"
+msgstr "Siirry Pro-pakettiin"
+
+#: src/Commerce.php:73
+msgid ""
+"Could not check your license. Features in your last verified plan remain "
+"active. Try again on the License tab."
+msgstr ""
+"Lisenssiä ei voitu tarkistaa. Viimeksi vahvistetun paketin ominaisuudet "
+"pysyvät käytössä. Yritä uudelleen Lisenssi-välilehdellä."
+
+#: src/Commerce.php:75
+msgid ""
+"Your license has expired. Paid features are off. Renew your license, then "
+"select Check license on the License tab."
+msgstr ""
+"Lisenssisi on vanhentunut. Maksulliset ominaisuudet eivät ole käytössä. "
+"Uusi lisenssi ja valitse sitten Lisenssi-välilehdeltä Tarkista lisenssi."
+
+#: src/Commerce.php:77
+msgid ""
+"Your license plan has not been verified. Select Check license on the "
+"License tab. Paid features stay off until the plan is verified."
+msgstr ""
+"Lisenssipakettiasi ei ole vahvistettu. Valitse Lisenssi-välilehdeltä "
+"Tarkista lisenssi. Maksulliset ominaisuudet pysyvät poissa käytöstä, kunnes "
+"paketti on vahvistettu."
+
+#: src/Commerce.php:79
+msgid ""
+"Activate your Pro or Enterprise license on the License tab to use paid "
+"features."
+msgstr ""
+"Aktivoi Pro- tai Enterprise-lisenssisi Lisenssi-välilehdellä, jotta voit "
+"käyttää maksullisia ominaisuuksia."
+
+#: src/Commerce.php:99
+msgid "Backup LDAP servers"
+msgstr "LDAP-varapalvelimet"
+
+#: src/Commerce.php:100
+msgid ""
+"Try the next server if a directory server cannot be reached. All servers "
+"must use the same directory."
+msgstr ""
+"Kokeile seuraavaa palvelinta, jos hakemistopalvelimeen ei saada yhteyttä. "
+"Kaikkien palvelinten on käytettävä samaa hakemistoa."
+
+#: src/Commerce.php:100
+msgid ""
+"Give staff one less password prompt. Sign in through your web server with "
+"Kerberos, NTLM, or other server authentication."
+msgstr ""
+"Vähennä henkilökunnan salasanakyselyjä yhdellä. Kirjaudu verkkopalvelimen "
+"kautta Kerberos-, NTLM- tai muulla palvelintodennuksella."
+
+#: src/Commerce.php:105
+msgid ""
+"Turn directory groups into WordPress roles at each login. Give editors, "
+"authors, and other teams the access they need."
+msgstr ""
+"Määritä WordPress-roolit hakemistoryhmien perusteella jokaisella "
+"kirjautumiskerralla. Anna toimittajille, kirjoittajille ja muille tiimeille "
+"tarvittavat käyttöoikeudet."
+
+#: src/Commerce.php:110
+msgid ""
+"Keep names, email addresses, and websites current. Copy directory values to "
+"existing WordPress profiles at login."
+msgstr ""
+"Pidä nimet, sähköpostiosoitteet ja verkkosivustot ajan tasalla. Kopioi "
+"hakemiston arvot nykyisiin WordPress-profiileihin kirjautumisen yhteydessä."
+
+#: src/Commerce.php:115
+msgid ""
+"Put phone numbers, departments, and other LDAP fields to work in WordPress. "
+"Map text and number fields for your theme or plugins."
+msgstr ""
+"Hyödynnä puhelinnumeroita, osastoja ja muita LDAP-kenttiä WordPressissä. "
+"Yhdistä teksti- ja numerokentät teemasi tai lisäosiesi käyttöön."
+
+#: src/Commerce.php:120
+msgid ""
+"Have accounts ready before the first login. Import directory users each "
+"hour, with filters for groups and directory location."
+msgstr ""
+"Valmistele tilit ennen ensimmäistä kirjautumista. Tuo hakemiston käyttäjät "
+"tunnin välein ja suodata ryhmän tai hakemistosijainnin mukaan."
+
+#: src/Commerce.php:125
+msgid ""
+"Check managed accounts each hour. Suspend access and end sessions when "
+"directory checks confirm removal or lost access. Keep user content."
+msgstr ""
+"Tarkista hallitut tilit tunnin välein. Estä käyttö ja päätä istunnot, kun "
+"hakemistotarkistukset vahvistavat poiston tai käyttöoikeuden menetyksen. "
+"Säilytä käyttäjien sisältö."
+
+#: src/Commerce.php:130
+msgid ""
+"Manage access across your WordPress network. Use directory groups to assign "
+"site membership and roles, then remove access when groups change."
+msgstr ""
+"Hallitse käyttöoikeuksia koko WordPress-verkossa. Määritä sivustojen "
+"jäsenyydet ja roolit hakemistoryhmien avulla ja poista käyttöoikeudet "
+"ryhmien muuttuessa."
+
+#: src/Commerce.php:134
+msgid "Audit history and CSV export"
+msgstr "Tapahtumahistoria ja CSV-vienti"
+
+#: src/Commerce.php:135
+msgid ""
+"See login results, role changes, imports, and access changes in one place. "
+"Set record retention and export the history to CSV."
+msgstr ""
+"Tarkastele kirjautumistuloksia, roolimuutoksia, tuonteja ja "
+"käyttöoikeusmuutoksia yhdessä paikassa. Määritä tietueiden säilytysaika ja "
+"vie historia CSV-tiedostoon."
+
+#: src/Commerce.php:141
+msgid "Simple LDAP Login Pro and Enterprise"
+msgstr "Simple LDAP Login Pro ja Enterprise"
+
+#: src/Commerce.php:147
+msgid "Keep WordPress access up to date."
+msgstr "Pidä WordPress-käyttöoikeudet ajan tasalla."
+
+#: src/Commerce.php:148
+msgid ""
+"Upgrade to Pro to assign roles and update profiles at login. Upgrade to "
+"Enterprise to remove access when staff leave, before their next login."
+msgstr ""
+"Päivitä Prohon, jotta voit määrittää roolit ja päivittää profiilit "
+"kirjautumisen yhteydessä. Päivitä Enterpriseen, jotta voit poistaa "
+"käyttöoikeuden työntekijän lähtiessä ennen hänen seuraavaa kirjautumistaan."
+
+#: src/Commerce.php:144
+msgid "Both plans cover one site. Your existing LDAP settings stay in place."
+msgstr "Molemmat paketit kattavat yhden sivuston. Nykyiset LDAP-asetuksesi säilyvät."
+
+#: src/Commerce.php:148
+msgid "Pro — $99/year"
+msgstr "Pro — 99 $/vuosi"
+
+#: src/Commerce.php:149
+msgid "Enterprise — $499/year"
+msgstr "Enterprise — 499 $/vuosi"
+
+#: src/Commerce.php:154
+msgid "All Free features, plus:"
+msgstr "Kaikki Free-ominaisuudet sekä:"
+
+#: src/Commerce.php:154
+msgid "Everything in Pro, plus:"
+msgstr "Kaikki Pro-ominaisuudet sekä:"
+
+#: src/Commerce.php:161
+msgid ""
+"Remove access and end active sessions when hourly directory checks confirm "
+"that access is lost. Keep user content and an audit history."
+msgstr ""
+"Poista käyttöoikeus ja päätä aktiiviset istunnot, kun tunnin välein "
+"tehtävät hakemistotarkistukset vahvistavat käyttöoikeuden menetyksen. "
+"Säilytä käyttäjien sisältö ja tarkastushistoria."
+
+#: src/Commerce.php:168
+msgid "Buy Pro"
+msgstr "Osta Pro"
+
+#: src/Commerce.php:168
+#: src/Commerce.php:201
+msgid "Get Enterprise"
+msgstr "Hanki Enterprise"
+
+#: src/Commerce.php:168
+msgid "Buy Enterprise"
+msgstr "Osta Enterprise"
+
+#: src/Commerce.php:171
+msgid ""
+"Scheduled tasks use WordPress cron and need site traffic or a system task. "
+"Single sign-on requires web server authentication. Multisite rules require "
+"network activation."
+msgstr ""
+"Ajastetut tehtävät käyttävät WordPress cronia ja tarvitsevat "
+"sivustoliikennettä tai järjestelmätehtävän. Kertakirjautuminen vaatii "
+"verkkopalvelimen todennuksen. Monisivustosäännöt vaativat verkkoaktivoinnin."
+
+#: src/Commerce.php:177
+msgid ""
+"PaidCommunities handles checkout. It receives your IP address, browser "
+"details, and the information you enter at checkout. LDAP credentials and "
+"user records are not sent."
+msgstr ""
+"PaidCommunities käsittelee maksun. Se saa IP-osoitteesi, selaintietosi ja "
+"maksun yhteydessä antamasi tiedot. LDAP-tunnistetietoja tai "
+"käyttäjätietueita ei lähetetä."
+
+#: pro/src/Admin.php:89
+msgid "License status updated."
+msgstr "Lisenssin tila päivitetty."
+
+#: pro/src/Admin.php:89
+#: pro/src/License.php:210
+msgid "Could not verify the license. Check your key and connection, then try again."
+msgstr ""
+"Lisenssin vahvistaminen epäonnistui. Tarkista avain ja yhteys, ja yritä "
+"sitten uudelleen."
+
+#: src/Commerce.php:111
+msgid "Enter the license key from your purchase receipt."
+msgstr "Syötä lisenssiavain ostopäiväkirjastasi."
+
+#: src/Commerce.php:190
+msgid "Plan not verified"
+msgstr "Pakettia ei vahvistettu"
+
+#: pro/src/Admin.php:95
+msgid "Expired"
+msgstr "Vanhentunut"
+
+#: pro/src/Admin.php:96
+msgid "Inactive"
+msgstr "Ei aktiivinen"
+
+#: pro/src/Admin.php:99
+msgid "License status"
+msgstr "Lisenssin tila"
+
+#: pro/src/Admin.php:99
+msgid "Active"
+msgstr "Aktiivinen"
+
+#: pro/src/Admin.php:94
+#: pro/src/Admin.php:99
+msgid "Not activated"
+msgstr "Ei aktivoitu"
+
+#: src/Commerce.php:197
+msgid "Current plan"
+msgstr "Nykyinen paketti"
+
+#: src/Commerce.php:197
+#: src/Commerce.php:209
+msgid "Enterprise"
+msgstr "Enterprise"
+
+#: src/Commerce.php:197
+#: src/Commerce.php:208
+msgid "Pro"
+msgstr "Pro"
+
+#: src/Commerce.php:199
+msgid ""
+"Enterprise adds scheduled account import and access removal, multisite "
+"membership rules, and audit history with CSV export."
+msgstr ""
+"Enterprise lisää ajastetun tilien tuonnin ja käyttöoikeuksien poiston, "
+"monisivuston jäsenyyssäännöt sekä tapahtumahistorian ja CSV-viennin."
+
+#: pro/src/Admin.php:113
+msgid "Check license"
+msgstr "Tarkista lisenssi"
+
+#: src/Commerce.php:239
+msgid ""
+"PaidCommunities handles licenses. Activation sends your license key, site "
+"domain, plugin version, and server IP address. License checks send site "
+"details. LDAP credentials and user records are not sent."
+msgstr ""
+"PaidCommunities hallitsee lisenssejä. Aktivointi lähettää lisenssiavaimesi, "
+"sivuston verkkotunnuksen, lisäosan version ja palvelimen IP-osoitteen. "
+"Lisenssitarkistukset lähettävät sivuston tietoja. LDAP-tunnistetietoja tai "
+"käyttäjätietueita ei lähetetä."
+
+#: pro/src/Admin.php:144
+msgid "Select a license action."
+msgstr "Valitse lisenssitoiminto."
+
+#: pro/src/Admin.php:107
+msgid "License key"
+msgstr "Lisenssiavain"
+
+#: pro/src/Admin.php:111
+msgid "Activate license"
+msgstr "Aktivoi lisenssi"
+
+#: pro/src/Admin.php:114
+msgid "Deactivate license"
+msgstr "Deaktivoi lisenssi"
+
+#: src/Commerce.php:249
+msgid "Activating license…"
+msgstr "Aktivoidaan lisenssiä…"
+
+#: src/Commerce.php:250
+msgid "Deactivating license…"
+msgstr "Poistetaan lisenssiä käytöstä…"
+
+#: src/Commerce.php:251
+msgid "License error"
+msgstr "Lisenssivirhe"
+
+#: src/Commerce.php:252
+msgid "License updated"
+msgstr "Lisenssi päivitetty"
+
+#: src/Ldap_Client.php:440
+msgid ""
+"LDAP login failed. Check your username and password or contact your site "
+"administrator."
+msgstr ""
+"LDAP-kirjautuminen epäonnistui. Tarkista käyttäjänimesi ja salasanasi tai "
+"ota yhteyttä sivustosi ylläpitäjään."
+
+#: src/Ldap_Client.php:442
+msgid "Your account is not allowed to log in to this site."
+msgstr "Tilisi ei saa kirjautua tälle sivustolle."
+
+#: src/Ldap_Client.php:444
+msgid "LDAP login is unavailable. Contact your site administrator."
+msgstr "LDAP-kirjautuminen ei ole käytettävissä. Ota yhteyttä sivuston ylläpitäjään."
+
+#: src/Secrets.php:24
+msgid "PHP OpenSSL is required to save the LDAP search password."
+msgstr "PHP OpenSSL on vaadittu LDAP-hakusalasanan tallentamiseen."
+
+#: src/Secrets.php:92
+msgid ""
+"Could not read or save the LDAP search password. Enter it again. If this "
+"continues, ask your host to check OpenSSL and the encryption key."
+msgstr ""
+"LDAP-hakusalasanaa ei voitu lukea tai tallentaa. Syötä se uudelleen. Jos "
+"tämä jatkuu, pyydä isäntääsi tarkistamaan OpenSSL ja salausavain."
+
+#: src/Settings.php:310
+msgid ""
+"Select a recovery account on the Access tab, or turn local recovery access "
+"Off."
+msgstr ""
+"Valitse palautustili Käyttöoikeus-välilehdeltä tai kytke paikallinen "
+"palautusoikeus pois päältä."
+
+#: src/Settings.php:318
+msgid ""
+"Enable Allow unencrypted LDAP on the Advanced tab, or choose StartTLS or "
+"LDAPS."
+msgstr ""
+"Ota käyttöön Salli salaamaton LDAP Kehittyneet-välilehdellä tai valitse "
+"StartTLS tai LDAPS."
+
+#: src/Settings.php:341
+msgid "A custom field mapping uses a protected or invalid WordPress user meta key."
+msgstr ""
+"Mukautettu kenttäkartoitus käyttää suojattua tai virheellistä "
+"WordPress-käyttäjämeta-avainta."
+
+#: src/Settings.php:346
+msgid "Enter a Base DN and at least one LDAP server before enabling LDAP login."
+msgstr ""
+"Syötä Perus DN ja vähintään yksi LDAP-palvelin ennen LDAP-kirjautumisen "
+"käyttöönottoa."
+
+#: src/Settings.php:349
+msgid "WordPress could not save the settings. Try again."
+msgstr "WordPress ei voinut tallentaa asetuksia. Yritä uudelleen."
+
+#: src/Settings.php:604
+msgid "LDAP protocol version"
+msgstr "LDAP-protokollaversio"
+
+#: src/Settings.php:605
+msgid "LDAP timeout"
+msgstr "LDAP-aika"
+
+#: src/Settings.php:623
+msgid "Check the submitted settings. No changes were saved."
+msgstr "Tarkista lähetetyt asetukset. Muutoksia ei tallennettu."
+
+#: src/Settings.php:626
+#. translators: %s: setting label.
+#, php-format
+msgid "Check %s. No changes were saved."
+msgstr "Tarkista %s. Muutoksia ei tallennettu."
+
+#: src/Commerce.php:181
+msgid ""
+"Install the paid ZIP from your receipt. On the License tab, activate your "
+"key or select Check license. Your LDAP settings stay in place."
+msgstr ""
+"Asenna maksullisen version ZIP-tiedosto ostokuitistasi. Aktivoi avain "
+"Lisenssi-välilehdellä tai valitse Tarkista lisenssi. LDAP-asetukset "
+"säilyvät."
+
+#: src/Commerce.php:205
+msgid ""
+"Get Enterprise opens checkout for a new license. It does not change or "
+"cancel your Pro subscription. Manage that subscription separately through "
+"PaidCommunities. After purchase, deactivate this key and activate the new "
+"key."
+msgstr ""
+"Hanki Enterprise avaa uuden lisenssin maksusivun. Se ei muuta eikä peruuta "
+"Pro-tilaustasi. Hallitse tilausta erikseen PaidCommunities-palvelussa. "
+"Poista tämä avain käytöstä oston jälkeen ja aktivoi uusi avain."
